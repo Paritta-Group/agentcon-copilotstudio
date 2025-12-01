@@ -2,12 +2,6 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION GHOST ROUTINE`
 
-> **⏱️ Operation Time Window:** `~45 minutes`
-
-🎥 **Watch the Walkthrough**
-
-[![Event triggers video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=ZgwHL8PQ1nY "Watch the walkthrough on YouTube")
-
 ## 🎯 Mission Brief
 
 It's time to elevate your agent from conversational assistant to autonomous operative. Your mission is to enable your agent to act without being summoned - responding to signals from across your digital domain with precision and speed.
@@ -25,6 +19,10 @@ Success means building agents that initiate value - not just respond to it.
 - Exploring common Event Trigger scenarios
 - Understanding authentication, security, and publishing considerations for event-driven agents
 - Building an autonomous IT Help Desk agent that responds to SharePoint events and sends email acknowledgments
+
+## ⏭️ Skip to Lab
+
+[Lab 08: Add Event Triggers for autonomous agent behavior](#-lab-08-add-event-triggers-for-autonomous-agent-behavior)
 
 ## 🤔 What is an Event Trigger?
 
@@ -191,7 +189,7 @@ Keep these important considerations in mind when working with event triggers:
 - Administrators can block event triggers entirely
 - Contact your admin if expected triggers aren't available
 
-## 🧪 Lab 08 - Add Event Triggers for autonomous agent behavior
+## 🧪 Lab 08: Add Event Triggers for autonomous agent behavior
 
 ### 🎯 Use case
 

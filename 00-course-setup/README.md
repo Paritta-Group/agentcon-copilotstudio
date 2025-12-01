@@ -2,8 +2,6 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION DEPLOYMENT READY`
 
-> **⏱️ Operation Time Window:** `~30 minutes`  
-
 ## 🎯 Mission Brief
 
 Welcome to the first mission of your training as a Copilot Studio Agent.  
@@ -21,15 +19,6 @@ Your mission includes:
 1. Creating a developer environment as your Copilot Studio environment to build in  
 1. Creating a SharePoint site to serve as your data source in later missions
 
----
-
-## 🔍 Prerequisites
-
-Before you begin, ensure you have:
-
-1. f
-1. f
-1. f
 ---
 
 ## Step 1: Get username and password

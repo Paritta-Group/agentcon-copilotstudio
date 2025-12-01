@@ -2,12 +2,6 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION INTERFACE UPLIFT`
 
-> **⏱️ Operation Time Window:** `~45 minutes`
-
-🎥 **Watch the Walkthrough**
-
-[![Adaptive cards video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=RhIlzYHPCXo "Watch the walkthrough on YouTube")
-
 ## 🎯  Mission Brief
 
 Agents, your mission is to infiltrate the static user experience and replace it with rich, dynamic, and actionable Adaptive Cards. You’ll deploy JSON payloads and Power Fx formulas to transform Copilot Studio conversations from basic Q&A into fully interactive engagements. Your goal is to gather user input, present data beautifully, and direct conversations with precision and style. Fail to adapt, and your users may defect to less intelligent interfaces.
@@ -21,6 +15,10 @@ In this mission, you’ll learn:
 1. Exploring the Adaptive Card Designer and its key components for visual card creation
 1. Creating rich, interactive forms and data collection experiences within agent topics
 1. Implementing best practices for designing responsive and user-friendly adaptive cards
+
+## ⏭️ Skip to Lab
+
+🧪 [Lab 06: Add adaptive cards and enhance topic capabilities](#-lab-06-add-adaptive-cards-and-enhance-topic-capabilities)
 
 ## 🤔 What is an Adaptive Card?
 
@@ -235,7 +233,7 @@ Here are some best practices for creating Adaptive Cards for agents in Copilot S
     - Bind card elements to variables or outputs from nodes using Power Fx to personalize the user experience.
     - For example, show the user's name or current status dynamically.
 
-## 🧪 Lab 06 - Add adaptive cards and enhance topic capabilities
+## 🧪 Lab 06: Add adaptive cards and enhance topic capabilities
 
 We're now going to learn how to enhance our topic with adaptive cards and using advanced functionality of topics and nodes.
 

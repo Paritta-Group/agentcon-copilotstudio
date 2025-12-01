@@ -2,12 +2,6 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION STAY ON TOPIC`
 
-> **⏱️ Operation Time Window:** `~60 minutes`
-
-🎥 **Watch the Walkthrough**
-
-[![Trigger video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=7iPAZaA8nJs "Watch the walkthrough on YouTube")
-
 ## 🎯  Mission Brief
 
 You’ve built an agent. It listens, learns, and answers questions - but now it’s time to get more tactical. In this mission, you’ll go deep under the hood and teach your agent how to respond to specific prompts with precision.
@@ -33,6 +27,10 @@ In this mission, you’ll learn:
 1. Exploring different types of conversation nodes and how to use Power Fx for dynamic logic
 1. Creating custom topics from scratch to handle specific user requests and tasks
 1. Building a functional topic that connects to SharePoint data using connectors and tools
+
+## ⏭️  Skip to Lab
+
+🧪 [Lab 05: Add a new topic with conversation nodes](#-lab-05-add-a-new-topic-with-conversation-nodes)
 
 ## 🤔 What is a Topic?
 
@@ -431,7 +429,7 @@ Agent responds with,
 
 `Your vacation leave request from August 5 to August 10 has been submitted. Your manager will review and get back to you shortly.`
 
-## 🧪 Lab 05 - Add a new topic with conversation nodes
+## 🧪 Lab 05: Add a new topic with conversation nodes
 
 We're now going to learn how to add a new topic with a trigger and tools. This lab will cover creating a topic from blank so that you understand how to customize topics to your needs.
 
@@ -453,11 +451,9 @@ Let's begin!
 
 1. **SharePoint list**
 
-    We'll be using the **Devices** SharePoint list from [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
+    We'll be using the **Devices** SharePoint list from [Lesson 00 - Course Setup - Step 3: Verify  SharePoint site](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
 
-    If you have not set up the **Devices** SharePoint list, please head back to [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
-
-1. **Contoso Helpdesk Agent**
+2. **Contoso Helpdesk Agent**
 
     We're going to use the same agent created previously in [Lesson 06 - Create a custom agent using natural language with Copilot and grounding it with your data](../06-create-agent-from-conversation/README.md).
 

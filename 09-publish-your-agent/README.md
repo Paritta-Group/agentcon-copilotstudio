@@ -2,12 +2,6 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION PUBLISH PUBLISH PUBLISH`
 
-> **⏱️ Operation Time Window:** `~30 minutes`  
-
-🎥 **Watch the Walkthrough**
-
-[![Publish agent video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=eVZmljhYlSI "Watch the walkthrough on YouTube")
-
 ## 🎯 Mission Brief
 
 After completing a series of challenging modules, Agent Maker, you're now ready for your most critical step yet: publishing your agent. It’s time to make your creation available to users across Microsoft Teams and Microsoft 365 Copilot.
@@ -25,6 +19,10 @@ Let’s launch your agent into action.
 1. How to add a channel (Microsoft Teams & Microsoft 365 Copilot)
 1. How to add the agent in Microsoft Teams
 1. How to make the agent available in Microsoft Teams for your whole organization
+
+## ⏭️ Skip to Lab
+
+🧪 [Lab 09: Publish your agent to Teams and Microsoft 365 Copilot](#-lab-09-publish-your-agent-to-teams-and-microsoft-365-copilot)
 
 ## 🚀 Publish an agent
 

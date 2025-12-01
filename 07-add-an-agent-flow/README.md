@@ -2,12 +2,6 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION AUTOMATION POWERHOUSE`
 
-> **⏱️ Operation Time Window:** `~30 minutes`  
-
-🎥 **Watch the Walkthrough**
-
-[![Agent flow video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=vtLZJT3eBXg "Watch the walkthrough on YouTube")
-
 ## 🎯 Mission Brief
 
 Your agent can now converse with users and provide information, but true operational excellence requires your agent to take action. This mission will transform your conversational agent into an automation powerhouse by equipping it with agent flows.
@@ -22,6 +16,10 @@ In this mission, you’ll learn:
 1. Learning the key features that make agent flows powerful including AI actions and natural language authoring
 1. Exploring the agent flow designer and how to use expressions for dynamic data handling
 1. Creating a complete device request automation that integrates SharePoint data and email notifications
+
+## ⏭️ Skip to Lab
+
+🧪 [Lab 07: Add an agent flow for automation and enhance topic capabilities](#-lab-07-add-an-agent-flow-for-automation-and-enhance-topic-capabilities)
 
 ## 🤔 What is an agent flow?
 
@@ -328,7 +326,7 @@ Here are some best practices for building agent flows in Copilot Studio.
 
     - If you add an action and later decide you don't need it, remove it to keep your flow clean.
 
-## 🧪 Lab 07 - Add an agent flow for automation and enhance topic capabilities
+## 🧪 Lab 07: Add an agent flow for automation and enhance topic capabilities
 
 We're now going to learn how to enhance our topic with adaptive cards and using advanced functionality of topics and nodes.
 

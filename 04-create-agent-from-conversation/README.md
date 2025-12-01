@@ -1,13 +1,5 @@
 # 🚨 Mission 04: Create a custom agent using natural language with Copilot and grounding it with your data
 
-## 🕵️‍♂️ CODENAME: `OPERATION AGENT FORGE`
-
-> **⏱️ Operation Time Window:** `~75 minutes`
-
-🎥 **Watch the Walkthrough**
-
-[![Create custom agent video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=qZTtQVncGFg "Watch the walkthrough on YouTube")
-
 ## 🎯 Mission Brief
 
 Welcome back, Agent Maker. This mission puts you in the command seat of the most powerful capability in Copilot Studio - creating a custom agent from scratch using only natural language… and supercharging it with your own data.
@@ -27,6 +19,10 @@ In this mission, you’ll learn:
 1. Grounding agents with enterprise knowledge sources including SharePoint, documents, and websites
 1. Learning about generative orchestration and how agents dynamically search and respond using multiple data sources
 1. Building and testing a fully functional IT helpdesk agent that can answer questions from your own data
+
+## ⏭️ Skip to Lab
+
+🧪 [Lab 04: Create a custom agent in Copilot Studio](#-lab-04-create-a-custom-agent-in-copilot-studio)
 
 ## 🤔 What is a _custom_ agent?
 

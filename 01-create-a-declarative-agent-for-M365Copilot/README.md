@@ -2,12 +2,6 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION COPILOT EXTENSION`
 
-> **⏱️ Operation Time Window:** `~60 minutes`
-
-🎥 **Watch the Walkthrough**
-
-[![Create a Declarative Agent video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=BVNUmLXFCq8 "Watch the walkthrough on YouTube")
-
 ## 🎯 Mission Brief
 
 Welcome to your first field assignment, Agent Maker. You’ve been selected to design, equip, and deploy a Declarative Agent—a specialized operative embedded directly into Microsoft 365 Copilot and Microsoft Teams.
@@ -25,6 +19,10 @@ In this mission, you’ll learn:
 1. Creating a declarative agent using natural language through the conversational creation experience
 1. Adding AI prompts as tools to enhance your agent's specialized knowledge and problem-solving abilities
 1. Publishing and testing your declarative agent in Microsoft 365 Copilot and Microsoft Teams
+
+## ⏭️ Skip to Lab
+
+🧪 [Lab 01: Build a declarative agent in Microsoft Copilot Studio for Microsoft 365 Copilot](#-lab-01-build-a-declarative-agent-in-microsoft-copilot-studio-for-microsoft-365-copilot)
 
 ## 🕵🏻‍♀️ What is a declarative agent for Microsoft 365 Copilot?
 
