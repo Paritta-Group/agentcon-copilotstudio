@@ -132,41 +132,40 @@ Let's begin!
 
 1. Select **Agents** from the menu and select **Copilot for Microsoft 365**.
 
-       ![Copilot for Microsoft 365](assets/3.1_02_CopilotForM365.png)
+    ![Copilot for Microsoft 365](assets/3.1_02_CopilotForM365.png)
 
 1. Next, we're going to create a declarative agent by selecting **+ Add** agent.
 
-       ![Add Agent](assets/3.1_03_AddAgent.png)
+    ![Add Agent](assets/3.1_03_AddAgent.png)
 
 1. We'll then see the conversational creation experience load where we can chat in natural language with Copilot to describe the declarative agent we want to build, and use the provided questions for guidance.
 
-       Let's enter a detailed description that outlines the following,  
+    Let's enter a detailed description that outlines the following,  
        - the task of the agent  
        - what type of inquiries it can handle  
        - the format of its response  
        - the goal of the agent  
+
+    ```text
+    You are a highly skilled and experienced IT professional specializing in a wide range of computer systems, networking, and cybersecurity. You are able to diagnose and solve technical issues, explain solutions in a clear and understandable manner for users of all technical levels, and provide guidance on best practices. You should be concise and informative, using step-by-step instructions with bullet points when appropriate. Your goal is to help the user understand the problem and how to resolve it effectively.
+    ```
     
-       ```text
-       You are a highly skilled and experienced IT professional specializing in a wide range of computer systems, networking, and cybersecurity. You are able to diagnose and solve technical issues, explain solutions in a clear and understandable manner for users of all technical levels, and provide guidance on best practices. You should be concise and informative, using step-by-step instructions with bullet points when appropriate. Your goal is to help the user understand the problem and how to resolve it effectively.
-       ```
-    
-       ![Create Prompt](assets/3.1_04_CreatePrompt.png)
+    ![Create Prompt](assets/3.1_04_CreatePrompt.png)
 
 1. After submitting the prompt, a noticeable update will appear on the right hand side pane with the details and instructions of the agent as defined by the prompt. Next you'll be asked to confirm the name of your agent and Copilot will have suggested a name.
 
-       Either enter `yes` to accept the suggested name or enter a different name such as the following,
-    
-       ```text
+    Either type and enter `yes` to accept the suggested name or enter a different name such as the following,
+
+    ```text
        Contoso Tech Support Pro
-       ```
-    
-       ![Instructions updated](assets/3.1_05_InstructionsUpdated.png)
+    ```
 
-    !!! warning "Reminder: Copilot questions may differ across sessions"
+    ![Instructions updated](assets/3.1_05_InstructionsUpdated.png)
 
-        The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously.mk
+    [!WARNING]
+    The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously
 
-1. The name of the agent has now been updated as seen on the right hand side pane. We're now asked to refine the instructions for the agent. What Copilot suggested sounds great so we'll ask it to use its own suggestions. We'll enter the following,
+2. The name of the agent has now been updated as seen on the right hand side pane. We're now asked to refine the instructions for the agent. What Copilot suggested sounds great so we'll ask it to use its own suggestions. We'll enter the following,
 
       ```text
       Focus on the IT issues and scenarios you've identified
@@ -174,11 +173,11 @@ Let's begin!
 
       ![Name updated](assets/3.1_06_NameUpdated.png)
 
-1. Next we'll be asked if we want to add any publicly accessible websites or knowledge. We'll respond with `No` as we will only be adding a prompt for our declarative agent in this lab. Subsequent labs in future lessons will cover knowledge sources.
+3. Next we'll be asked if we want to add any publicly accessible websites or knowledge. We'll respond with `No` as we will only be adding a prompt for our declarative agent in this lab. Subsequent labs in future lessons will cover knowledge sources.
 
       ![No websites or knowledge sources added](assets/3.1_07_KnowledgeSources.png)
 
-1. We'll then see a response from Copilot that we have now finished configuring our agent using the Copilot conversational creation experience. However let's refine it some more by outlining that it should be concise and informative with bullet points, use empathy in communication, and ask for feedback after providing solutions.
+4. We'll then see a response from Copilot that we have now finished configuring our agent using the Copilot conversational creation experience. However let's refine it some more by outlining that it should be concise and informative with bullet points, use empathy in communication, and ask for feedback after providing solutions.
 
     ```text
     Concise and Informative:
@@ -195,7 +194,7 @@ Let's begin!
 
       ![Update agent instructions](assets/3.1_08_FurtherRefinements.png)
 
-1. Copilot confirms the instructions have been updated. Click **Create** to provision the declarative agent for Microsoft 365 Copilot.
+5. Copilot confirms the instructions have been updated. Click **Create** to provision the declarative agent for Microsoft 365 Copilot.
 
       ![Create agent](assets/3.1_09_CreateDeclarativeAgent.png)
 
@@ -203,7 +202,7 @@ Let's begin!
 
         The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously.
 
-1. Once the agent has been provisioned, you'll see the details of the agent which contains the description and the instructions defined during the Copilot conversational creation experience.
+6. Once the agent has been provisioned, you'll see the details of the agent which contains the description and the instructions defined during the Copilot conversational creation experience.
 
       ![Agent details](assets/3.1_10_01_AgentDetails.png)
 
@@ -211,7 +210,7 @@ Let's begin!
 
       ![Suggested prompts](assets/3.1_10_02_SuggestedPrompts.png)
 
-1. In the Details section of the agent, you have the ability to change the agent icon as well. Select **Edit**.
+7. In the Details section of the agent, you have the ability to change the agent icon as well. Select **Edit**.
 
       ![Edit details](assets/3.1_11_01_EditDetails.png)
 
@@ -219,11 +218,11 @@ Let's begin!
 
       ![Change icon](assets/3.1_11_02_ChangeIcon.png)
 
-1. Let's do a quick test of the agent we've created. Select one of the **Starter Prompts** in the test pane on the right hand side.
+8. Let's do a quick test of the agent we've created. Select one of the **Starter Prompts** in the test pane on the right hand side.
 
       ![Test starter prompt](assets/3.1_12_TestUsingStarterPrompt.png)
 
-1. Our agent will then respond. Notice how it adhered to the instructions by providing bullet points into digestible parts, and used empathy in its response.
+9. Our agent will then respond. Notice how it adhered to the instructions by providing bullet points into digestible parts, and used empathy in its response.
 
     If you scroll to the bottom of the message, notice how it also asked for feedback after providing a solution as instructed.
 
