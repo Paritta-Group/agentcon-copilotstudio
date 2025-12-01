@@ -1,4 +1,4 @@
-# 🚨 Mission 03: Deploy a Declarative Agent for Microsoft 365 Copilot
+# 🚨 Mission 01: Deploy a Declarative Agent for Microsoft 365 Copilot
 
 ## 🕵️‍♂️ CODENAME: `OPERATION COPILOT EXTENSION`
 

@@ -451,11 +451,10 @@ Let's begin!
 
 1. **SharePoint list**
 
-    We'll be using the **Devices** SharePoint list from [Lesson 00 - Course Setup - Step 3: Verify  SharePoint site](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
-
+    We'll be using the **Devices** SharePoint list.  \*\*Link provided to you in your signup email\*\*.
 2. **Contoso Helpdesk Agent**
 
-    We're going to use the same agent created previously in [Lesson 06 - Create a custom agent using natural language with Copilot and grounding it with your data](../06-create-agent-from-conversation/README.md).
+    We're going to use the same agent created previously in [Lesson 04 - Create a custom agent using natural language with Copilot and grounding it with your data](../04-create-agent-from-conversation/README.md).
 
 ### 5.1 Add a new topic from blank
 
