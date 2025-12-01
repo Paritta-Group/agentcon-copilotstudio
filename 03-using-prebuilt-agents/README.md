@@ -61,8 +61,8 @@ Let's begin!
 
 1. Sign in with your Microsoft 365 work or school account
 
-!!! warning
-    You must be in a tenant where Copilot Studio is enabled. If you don’t see Copilot Studio, revisit [Mission 00](../00-course-setup/README.md) to complete your setup.
+>[!WARNING]
+You must be in a tenant where Copilot Studio is enabled. If you don’t see Copilot Studio, revisit [Mission 00](../00-course-setup/README.md) to complete your setup.
 
 ### 3.2 Choose the Safe Travels Agent Template
 

@@ -57,9 +57,6 @@ There are two types of solutions:
 
 Think of Solutions as a _toolbox_. When you need to fix or build something (an agent) in a different location (environment), you gather all the necessary tools (components) and put them in your toolbox (Solution). You can then carry this toolbox to the new location (environment) and use the tools (components) to complete your work, or add new tools (components) to customize your agent or project you're building.
 
-!!! quote "Elaiza, your friendly cloud advocate popping in here 🙋🏻‍♀️ to share some words:"
-    We have a saying in New Zealand, "Be a tidy Kiwi!" which is a call to action for New Zealanders 🥝 to take responsibility for their environment by disposing of litter properly and keeping public spaces clean. We can use the same context for agents by keeping everything related to your agent organized and portable, and it'll help you maintain a tidy environment.
-
 It's good practice to create an agent in a dedicated solution in your source (developer) environment. Here's why solutions are valuable:
 
 🧩 **Organized development**
@@ -168,9 +165,10 @@ The following are the security roles that enables users to create a solution in 
 
 #### Developer environment
 
-Make sure you switch to your dedicated developer environment, refer to [Lesson 00 - Course Setup - Step 3: Create new developer](../00-course-setup/README.md#step-3-create-new-developer-environment).
+>[!WARNING]
+Make sure you switch to your dedicated developer environment, it should have your name in it (i.e., Participant 001).
 
-1. On the upper right, select the **Cog wheel** icon and switch from the default environment to your environment, for example **Adele Vance's environment**.
+1. On the upper right, select **blank area** next to the **Cog wheel** icon and switch from the default environment to your environment, for example **Adele Vance's environment**.
 
     ![Developer environment](assets/4.0_03_DeveloperEnvironment.png)
 

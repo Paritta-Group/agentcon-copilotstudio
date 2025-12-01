@@ -48,7 +48,7 @@ The following table highlights the differences when building a declarative agent
 
 There are more capabilities offered for declarative agents built in Microsoft Copilot Studio which we'll learn about next.
 
-!!! tip
+>[!TIP]
     - To learn more about Copilot Studio lite, head to [Copilot Developer Camp: Lab MAB1 - Build your first agent](https://microsoft.github.io/copilot-camp/pages/make/agent-builder/01-first-agent/)
     - For pro-development of extending a declarative agent beyond Copilot Studio lite for Microsoft 365 Copilot, head to [Copilot Developer Camp: Lab MAB1 - Build your first agent](https://microsoft.github.io/copilot-camp/pages/extend-m365-copilot/)
 
@@ -96,7 +96,7 @@ We'll next learn how to build a declarative agent for a "Business-to-Employee" u
 - [1.3 Update instructions and test your declarative agent](#13-update-instructions-and-test-your-declarative-agent)
 - [1.4 Publish your declarative agent to Microsoft 365 Copilot and Microsoft Teams](#14-publish-your-declarative-agent-to-microsoft-365-copilot-and-microsoft-teams)
 
-!!! note
+>[!NOTE]
     This lab will outline steps to add a Prompt as a tool. The following lessons will dive into adding knowledge sources and adding other tools available. Keeping it simple for your learning 😊
 
 ### 👩🏻‍💼 Understanding Business-to-Employee (B2E)
@@ -117,28 +117,27 @@ Let's begin!
 
 - Makers must have permissions to create in and have access to a Copilot Studio environment.
 
-!!! note "Licensing note"
-    This lab will outline steps to add a Prompt as a tool. The following lessons will dive into adding knowledge sources and adding other tools available. Keeping it simple for your learning 😊
+[!INFORMATION]
+This lab will outline steps to add a Prompt as a tool. The following lessons will dive into adding knowledge sources and adding other tools available. Keeping it simple for your learning 😊
   
-    You do not need a Microsoft 365 Copilot user license to publish your declarative agent built in Copilot Studio to Microsoft 365 Copilot. However **users** of the _published declarative agent_ in Microsoft 365 Copilot require a Microsoft 365 Copilot user license.
+You do not need a Microsoft 365 Copilot user license to publish your declarative agent built in Copilot Studio to Microsoft 365 Copilot. However **users** of the _published declarative agent_ in Microsoft 365 Copilot require a Microsoft 365 Copilot user license.
 
 ### 1.1 Create a declarative agent
 
-!!! warning "Copilot questions may differ across sessions"
-
-    The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously.
+>[!WARNING]
+The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously.
 
 1. Navigate to [https://copilotstudio.microsoft.com/](https://copilotstudio.microsoft.com/) and sign in using your credentials. Make sure to switch to your environment that you're using for these labs.
 
-1. Select **Agents** from the menu and select **Copilot for Microsoft 365**.
+2. Select **Agents** from the menu and select **Copilot for Microsoft 365**.
 
     ![Copilot for Microsoft 365](assets/3.1_02_CopilotForM365.png)
 
-1. Next, we're going to create a declarative agent by selecting **+ Add** agent.
+3. Next, we're going to create a declarative agent by selecting **+ Add** agent.
 
     ![Add Agent](assets/3.1_03_AddAgent.png)
 
-1. We'll then see the conversational creation experience load where we can chat in natural language with Copilot to describe the declarative agent we want to build, and use the provided questions for guidance.
+4. We'll then see the conversational creation experience load where we can chat in natural language with Copilot to describe the declarative agent we want to build, and use the provided questions for guidance.
 
     Let's enter a detailed description that outlines the following,  
        - the task of the agent  
@@ -152,7 +151,7 @@ Let's begin!
     
     ![Create Prompt](assets/3.1_04_CreatePrompt.png)
 
-1. After submitting the prompt, a noticeable update will appear on the right hand side pane with the details and instructions of the agent as defined by the prompt. Next you'll be asked to confirm the name of your agent and Copilot will have suggested a name.
+5. After submitting the prompt, a noticeable update will appear on the right hand side pane with the details and instructions of the agent as defined by the prompt. Next you'll be asked to confirm the name of your agent and Copilot will have suggested a name.
 
     Either type and enter `yes` to accept the suggested name or enter a different name such as the following,
 
@@ -162,10 +161,10 @@ Let's begin!
 
     ![Instructions updated](assets/3.1_05_InstructionsUpdated.png)
 
-    [!WARNING]
+    >[!WARNING]
     The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously
 
-2. The name of the agent has now been updated as seen on the right hand side pane. We're now asked to refine the instructions for the agent. What Copilot suggested sounds great so we'll ask it to use its own suggestions. We'll enter the following,
+6. The name of the agent has now been updated as seen on the right hand side pane. We're now asked to refine the instructions for the agent. What Copilot suggested sounds great so we'll ask it to use its own suggestions. We'll enter the following,
 
       ```text
       Focus on the IT issues and scenarios you've identified
@@ -173,11 +172,11 @@ Let's begin!
 
       ![Name updated](assets/3.1_06_NameUpdated.png)
 
-3. Next we'll be asked if we want to add any publicly accessible websites or knowledge. We'll respond with `No` as we will only be adding a prompt for our declarative agent in this lab. Subsequent labs in future lessons will cover knowledge sources.
+7. Next we'll be asked if we want to add any publicly accessible websites or knowledge. We'll respond with `No` as we will only be adding a prompt for our declarative agent in this lab. Subsequent labs in future lessons will cover knowledge sources.
 
       ![No websites or knowledge sources added](assets/3.1_07_KnowledgeSources.png)
 
-4. We'll then see a response from Copilot that we have now finished configuring our agent using the Copilot conversational creation experience. However let's refine it some more by outlining that it should be concise and informative with bullet points, use empathy in communication, and ask for feedback after providing solutions.
+8. We'll then see a response from Copilot that we have now finished configuring our agent using the Copilot conversational creation experience. However let's refine it some more by outlining that it should be concise and informative with bullet points, use empathy in communication, and ask for feedback after providing solutions.
 
     ```text
     Concise and Informative:
@@ -194,15 +193,14 @@ Let's begin!
 
       ![Update agent instructions](assets/3.1_08_FurtherRefinements.png)
 
-5. Copilot confirms the instructions have been updated. Click **Create** to provision the declarative agent for Microsoft 365 Copilot.
+9. Copilot confirms the instructions have been updated. Click **Create** to provision the declarative agent for Microsoft 365 Copilot.
 
       ![Create agent](assets/3.1_09_CreateDeclarativeAgent.png)
 
-    !!! warning "Reminder: Copilot questions may differ across sessions"
+    >[!WARNING]
+    The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously.
 
-        The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously.
-
-6. Once the agent has been provisioned, you'll see the details of the agent which contains the description and the instructions defined during the Copilot conversational creation experience.
+10. Once the agent has been provisioned, you'll see the details of the agent which contains the description and the instructions defined during the Copilot conversational creation experience.
 
       ![Agent details](assets/3.1_10_01_AgentDetails.png)
 
@@ -210,7 +208,7 @@ Let's begin!
 
       ![Suggested prompts](assets/3.1_10_02_SuggestedPrompts.png)
 
-7. In the Details section of the agent, you have the ability to change the agent icon as well. Select **Edit**.
+11. In the Details section of the agent, you have the ability to change the agent icon as well. Select **Edit**.
 
       ![Edit details](assets/3.1_11_01_EditDetails.png)
 
@@ -218,11 +216,11 @@ Let's begin!
 
       ![Change icon](assets/3.1_11_02_ChangeIcon.png)
 
-8. Let's do a quick test of the agent we've created. Select one of the **Starter Prompts** in the test pane on the right hand side.
+12. Let's do a quick test of the agent we've created. Select one of the **Starter Prompts** in the test pane on the right hand side.
 
       ![Test starter prompt](assets/3.1_12_TestUsingStarterPrompt.png)
 
-9. Our agent will then respond. Notice how it adhered to the instructions by providing bullet points into digestible parts, and used empathy in its response.
+13. Our agent will then respond. Notice how it adhered to the instructions by providing bullet points into digestible parts, and used empathy in its response.
 
     If you scroll to the bottom of the message, notice how it also asked for feedback after providing a solution as instructed.
 
@@ -423,7 +421,7 @@ Let's now publish our declarative agent 😃
 
 1. For example, you can update the **Short description**, **Long description**, **Developer name** with your name.
 
-    !!! tip
+    >[!TIP]
         If you don't see all the fields displayed on your browser, try zooming out e.g. 75%
 
     Select **Publish**. Copilot Studio will then begin publishing the agent.
@@ -484,7 +482,7 @@ Let's now publish our declarative agent 😃
 
 1. But _how do we know_ the declarative agent invoked the prompt? 👀 Well, here's a tip!
 
-    !!! tip
+    >[!TIP]
         You can test and debug agents in Microsoft 365 Copilot by enabling [developer mode](https://learn.microsoft.com/microsoft-365-copilot/extensibility/debugging-copilot-agent#use-developer-mode-in-copilot-chat/?WT.mc_id=power-172614-ebenitez).
 
     Enter the following in the message Copilot field and submit.

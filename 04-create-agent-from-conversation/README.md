@@ -33,8 +33,8 @@ A custom agent is a chatbot or virtual assistant that you create and design in C
 - **You ground it with your own data**  - connect to your enterprise data through the built-in supported knowledge resources.
 - **You connect it to your own systems or applications** -  choose from connectors, flows, REST APIs and model context protocol servers.
 
-!!! note
-    Think of it this way: you are building your own digital helper that can talk to users and complete tasks for them such as answering questions, collecting information required by a process, or connecting to your enterprise data.
+>[!NOTE]
+Think of it this way: you are building your own digital helper that can talk to users and complete tasks for them such as answering questions, collecting information required by a process, or connecting to your enterprise data.
 
 ### 🤖 What can a custom agent do?
 
@@ -248,9 +248,8 @@ If you have not set up the **Contoso Agent** solution, please head back to [Less
 
 ### 4.1 Use natural language to create an agent with Copilot
 
-!!! warning "Copilot questions may differ across sessions"
-
-    The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously.
+>[!WARNING]
+The Copilot conversational creation experience can vary each time where the provided questions for guidance may be slightly different than previously.
 
 1. Navigate to the Home page of Copilot Studio and in the field, enter the following prompt which describes the IT help desk agent. The prompt includes the goal of the agent, the context, the expected tasks and format of the agent's response.
 
@@ -266,9 +265,9 @@ If you have not set up the **Contoso Agent** solution, please head back to [Less
 
 1. Copilot confirms the agent has been set up with the instructions provided, and is asking for confirmation on the name of the agent. We'll ask Copilot to name our agent as,
 
-       ```text
+      ```text
        Contoso Helpdesk Agent
-       ```
+      ```
 
       ![Rename the agent](./assets/6.1_03_AgentName.png)
 
@@ -276,9 +275,9 @@ If you have not set up the **Contoso Agent** solution, please head back to [Less
 
     Copy and paste the following, and submit the request to Copilot.
 
-       ```text
+      ```text
        Prioritize urgent requests. Examples of IT issues or scenarios to help with: device problems, network connectivity, log in issues. When troubleshooting, first acknowledge their issue and respond with empathy, then provide step by step guidance using bullet points and ask if they require further assistance.
-       ```
+      ```
 
       ![Refine agent instructions](./assets/6.1_04_RefineInstructions.png)
 
@@ -308,9 +307,9 @@ If you have not set up the **Contoso Agent** solution, please head back to [Less
 
     Copy and paste the following, and submit the request to Copilot.
 
-       ```text
+      ```text
        Do not provide assistance to questions related to HR, examples are: What is my vacation leave balance? How many sick days do I have? What's the URL to our payroll portal? 
-       ```
+      ```
 
       ![Do not answer HR related questions](./assets/6.1_07_DoNotTalkAbout.png)
 
@@ -326,9 +325,9 @@ If you have not set up the **Contoso Agent** solution, please head back to [Less
 
 1. Secondly, let's test our agent. Copy and paste the following, and submit the question to our agent.
 
-       ```text
+      ```text
        How can I check the warranty status of my Surface?
-       ```
+      ```
 
       ![Test agent](./assets/6.1_10_TestAgent.png)
 
@@ -370,9 +369,9 @@ If you have not set up the **Contoso Agent** solution, please head back to [Less
 
 1. Enter the following question in the **Test** pane.
 
-       ```text
+      ```text
        How do I find my Windows 11 product key?
-       ```
+      ```
 
       ![Test newly created agent](./assets/6.1_20_TestAgent.png)
 
@@ -392,25 +391,25 @@ Congratulations! You've built your first custom agent with Copilot in Copilot St
 
 ### 4.2 Add an internal knowledge source using a SharePoint site
 
-Previously with Copilot, we added a public website as an external knowledge source for our agent during the conversational creation experience. We're now going to add an internal knowledge source using a SharePoint site. This will be the SharePoint site you created during [Lesson 00 - Course Setup](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
+Previously with Copilot, we added a public website as an external knowledge source for our agent during the conversational creation experience. We're now going to add an internal knowledge source using a SharePoint site. This will be the SharePoint site provided to you in your **Signup Email**.
 
 1. Select **+ Add knowledge**.
 
       ![Select Add knowledge](./assets/6.2_01_AddKnowledge.png)
 
-1. Select **SharePoint**.
+2. Select **SharePoint**.
 
       ![Select SharePoint](./assets/6.2_02_SelectSharePoint.png)
 
-1. Paste in the **address of the SharePoint site** created in [Lesson 00 - Course Setup](../00-course-setup/README.md#step-4-create-new-sharepoint-site) in the SharePoint URL field and select **Add**.
+3. Paste in the **address of the SharePoint site** provided in your **Signup Email**.
 
       ![Enter SharePoint site URL](./assets/6.2_03_AddSharePointURL.png)
 
-1. Update the **name** of the SharePoint site to `Contoso IT` and select **Add**.
+4. Update the **name** of the SharePoint site to `Contoso IT` and select **Add**.
 
       ![Update SharePoint site name](./assets/6.2_04_UpdateNameAddToAgent.png)
 
-1. The SharePoint site has now been added as a knowledge source with a status of _Ready_. The Status column will show whether the knowledge source has been loaded/connected to successfully, or if there is an issue.
+5. The SharePoint site has now been added as a knowledge source with a status of _Ready_. The Status column will show whether the knowledge source has been loaded/connected to successfully, or if there is an issue.
 
       ![SharePoint site status](./assets/6.2_05_SharePointStatus.png)
 
