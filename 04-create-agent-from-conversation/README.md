@@ -236,9 +236,7 @@ Let's begin!
 
 - **SharePoint site**
 
-We'll be using the **Contoso IT** SharePoint site from [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
-
-If you have not set up the **Contoso IT** SharePoint site, please head back to [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
+We'll be using the **Contoso IT** SharePoint site, the link should be provided to you in your **Signup Email**
 
 - **Solution**
 
