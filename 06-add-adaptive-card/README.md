@@ -312,6 +312,8 @@ Let's begin!
 
 1. Click into the **Card payload editor** and select all lines using the Windows keyboard shortcut of _Ctrl + A_ or using the Mac keyboard shortcut of _Command + A_, followed by deleting the lines. **Paste** the JSON from the [Request devices .JSON file](assets/8.1_RequestDevice.json).
 
+    <a href="assets/8.1_RequestDevice.json" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
+
     ![Clear card payload editor](assets/8.1_09_SelectAll.png)
 
 1. Notice how the **Card Preview** now includes elements that display some text and a list of available devices.
