@@ -62,7 +62,7 @@ Remember how we learnt about Power Fx in [Mission 07 - Using Power Fx in your no
 
 As a recap,
 
-!!! note
+>[!NOTE]
     Power Fx is a low-code programming language used to add logic and dynamic behavior to your agent. It's the same language used in Microsoft Power Apps, and it's designed to be simple and Excel-like, making it easy for developers and non-developers.
 
 ### How Power Fx works in Adaptive Cards
@@ -153,14 +153,16 @@ This is the **raw JSON code** behind your card. Advanced users can edit this dir
 
 Even if you're new to the Adaptive Card designer, it's helpful to see how the visual design translates into codes.
 
-!!! tip "Tip - Check out the Adaptive Card samples"
+>[!TIP]
+Check out the Adaptive Card samples:
 
     1. Browse to [https://adaptivecards.microsoft.com/designer](https://adaptivecards.microsoft.com/designer).
     2. Select **New card** to see a list of samples you can choose and modify.
     3. Note that this designer is external (web-based). When you build your card in the web-based Adaptive Card Designer, copy the JSON from the Card Payload Editor.
     4. Paste the JSON into your adaptive card in your agent in Copilot Studio.
 
-    ![Adaptive Card Designer Samples](assets/8.0_04_AdaptiveCardDesignerSamples.png)
+
+![Adaptive Card Designer Samples](assets/8.0_04_AdaptiveCardDesignerSamples.png)
 
 ## 🌵 Common use cases
 
