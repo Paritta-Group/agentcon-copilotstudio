@@ -314,7 +314,8 @@ Let's begin!
 
 1. Click into the **Card payload editor** and select all lines using the Windows keyboard shortcut of _Ctrl + A_ or using the Mac keyboard shortcut of _Command + A_, followed by deleting the lines. **Paste** the JSON from the [Request devices .JSON file](assets/8.1_RequestDevice.json).
 
-    >[!TIP] Right-click -> Open link in new tab to open json in a different browser tab from this guide.
+    >[!TIP]
+    Right-click -> Open link in new tab to open json in a different browser tab from this guide.
 
     ![Clear card payload editor](assets/8.1_09_SelectAll.png)
 

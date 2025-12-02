@@ -627,12 +627,10 @@ Let's begin!
     - and the SharePoint column of **Asset type** equals _the selected device from the question node_.
 
     ```text
-    Concatenate("field_1 eq 'Available' and field_4 eq '", Topic.VarDeviceType, "'")
+    Concatenate("Status eq 'Available' and AssetType eq '", Topic.VarDeviceType, "'")
     ```
 
-    (Field mappings for the underlying list are field_1 = Status and field_4 = Asset Type)
-    
- 1.    Select **Insert**.
+1. Select **Insert**.
 
     ![Enter Power Fx expression and select insert](assets/7.3_13_EnterFormula.png)
 
