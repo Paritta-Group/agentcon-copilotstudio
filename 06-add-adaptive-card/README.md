@@ -312,7 +312,7 @@ Let's begin!
 
 1. Click into the **Card payload editor** and select all lines using the Windows keyboard shortcut of _Ctrl + A_ or using the Mac keyboard shortcut of _Command + A_, followed by deleting the lines. **Paste** the JSON from the [Request devices .JSON file](assets/8.1_RequestDevice.json).
 
-    <a href="assets/8.1_RequestDevice.json" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
+    >[!TIP] Right-click -> Open link in new tab to open json in a different browser tab from this guide.
 
     ![Clear card payload editor](assets/8.1_09_SelectAll.png)
 
@@ -332,11 +332,11 @@ Let's begin!
 
     ![Device request adaptive card](assets/8.1_12_DeviceRequestCard.png)
 
-1. Scroll to the bottom of the node and you'll see output variables. The `commentsId` and the `deviceSelectionId` were defined in the element properties. These two variables will store values from the card elements the users interact with. These values will be used downstream in the topic, which we'll learn about in the next lesson's lab.
+5. Scroll to the bottom of the node and you'll see output variables. The `commentsId` and the `deviceSelectionId` were defined in the element properties. These two variables will store values from the card elements the users interact with. These values will be used downstream in the topic, which we'll learn about in the next lesson's lab.
 
     ![Node variable outputs](assets/8.1_13_DeviceRequestCardOutputs.png)
 
-1. Let's next update the card from JSON to formula as we'll use Power Fx again to loop through the items returned in the **Get items** SharePoint connector action, stored in the **global variable**, `Global.VarDevices.value`, via the `value` property of the JSON response.
+6. Let's next update the card from JSON to formula as we'll use Power Fx again to loop through the items returned in the **Get items** SharePoint connector action, stored in the **global variable**, `Global.VarDevices.value`, via the `value` property of the JSON response.
 
     > We created this global variable in [Lab 05 - Add a new topic with conversation nodes, 5.3 Add a tool using a connector](../05-add-new-topic-with-trigger/README.md#53-add-a-tool-using-a-connector).
 
@@ -344,25 +344,25 @@ Let's begin!
 
     ![Change to formula](assets/8.1_14_ChangeToFormula.png)
 
-1. Click on the **expand** icon to enlarge the Formula field.
+7. Click on the **expand** icon to enlarge the Formula field.
 
     ![Click on expand icon](assets/8.1_15_SelectExpand.png)
 
-1. Click into the **Card payload editor** and select all lines using the Windows keyboard shortcut of _Ctrl + A_ or using the Mac keyboard shortcut of _Command + A_, followed by deleting the lines.
+8. Click into the **Card payload editor** and select all lines using the Windows keyboard shortcut of _Ctrl + A_ or using the Mac keyboard shortcut of _Command + A_, followed by deleting the lines.
 
     ![Click into payload card editor](assets/8.1_16_SelectAll.png)
 
     Paste the Formula from the [Request Devices formula file](assets/8.1_RequestDeviceFormula.txt).
 
-1. In the formula, we'll loop through each SharePoint list item using the `For All` function to display the values of `Model` in the title of the choice option, and the SharePoint item `ID` is referenced as the value. We're also wrapping the values with the `If(IsBlank()` functions as the formula expects a value in order to render the adaptive card in the authoring canvas of the topic. Otherwise you'll see a message appear, "Property cannot be null"
+9. In the formula, we'll loop through each SharePoint list item using the `For All` function to display the values of `Model` in the title of the choice option, and the SharePoint item `ID` is referenced as the value. We're also wrapping the values with the `If(IsBlank()` functions as the formula expects a value in order to render the adaptive card in the authoring canvas of the topic. Otherwise you'll see a message appear, "Property cannot be null"
 
     **Close** the card modal.
 
     ![Power Fx Formula](assets/8.1_17_PowerFxFormula.png)
 
-1. **Close** the **Adaptive Card Node properties** pane.
+10. **Close** the **Adaptive Card Node properties** pane.
 
-1. **Save** the topic.
+11. **Save** the topic.
 
     ![Save topic](assets/8.1_18_SaveTopic.png)
 

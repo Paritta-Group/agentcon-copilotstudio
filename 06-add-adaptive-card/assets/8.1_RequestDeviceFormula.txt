@@ -44,7 +44,7 @@
           style: "expanded",
           choices: ForAll(Global.VarDevices.value,
             {
-              title: If(IsBlank(Model), "NA", Model),
+              title: If(IsBlank(field_3), "NA", field_3),
               value: If(IsBlank(ID), "NA", ID)
             }
           )
