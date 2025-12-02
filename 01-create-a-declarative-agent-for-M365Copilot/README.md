@@ -156,7 +156,7 @@ The Copilot conversational creation experience can vary each time where the prov
     Either type and enter `yes` to accept the suggested name or enter a different name such as the following,
 
     ```text
-       Contoso Tech Support Pro
+    Contoso Tech Support Pro
     ```
 
     ![Instructions updated](assets/3.1_05_InstructionsUpdated.png)

@@ -604,7 +604,7 @@ Let's begin!
 
     ![Get items description](assets/7.3_09_UpdateDescription.png)
 
-1. Select the **Inputs** tab and select the **Contoso IT** site and the **Devices** list that you setup in [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
+1. Select the **Inputs** tab and select the **Contoso IT** site and the **Devices** list provided setup via the link in your **Signup Email**.
 
     ![Configure Get items inputs](assets/7.3_10_GetItemsInputs.png)
 
@@ -627,18 +627,18 @@ Let's begin!
     - and the SharePoint column of **Asset type** equals _the selected device from the question node_.
 
     ```text
-    Concatenate("Status eq 'Available' and AssetType eq '", Topic.VarDeviceType, "'")
+    Concatenate("field_1 eq 'Available' and field_4 eq '", Topic.VarDeviceType, "'")
     ```
 
     Select **Insert**.
 
     ![Enter Power Fx expression and select insert](assets/7.3_13_EnterFormula.png)
 
-1. The Power Fx expression will now be applied in the Filter Query input parameter of the **Get items** action. Next, select the **All items** view in the **Limit Columns by View**. This will only retrieve the columns in the list based on the selected view.
+1. The Power Fx expression will now be applied in the Filter Query input parameter of the **Get items** action. Next, select the **All items** view in the **Limit Columns by View**. This will only retrieve the columns in the list based on the selected view. (NOTE: you might need to click refresh to get the view to appear.)
 
     ![List Columns by View](assets/7.3_14_LimitColumnsByView.png)
 
-1. Next, we'll update the name of the variable for the output. Select the **Outputs** tab and select the `GetItems` variable.
+1. Next, we'll update the name of the variable for the output. Select the **Outputs** tab and select the `GetItems` variable. (Make sure to click the "record" section).
 
     ![Update variable](assets/7.3_15_ConfigureOutputs.png)
 
@@ -676,9 +676,17 @@ Let's begin!
 
 1. We'll now use a PowerFx expression to set the variable value as the `value` property returned in the **Get items** response, and make the [scope of the variable](https://learn.microsoft.com/microsoft-copilot-studio/advanced-power-fx?WT.mc_id=power-172618-ebenitez) global by adding the prefix of `Global`.
 
-    Select **Insert** and **save** the topic.
+    Enter the following formula:
+
+    ```text
+    Global.VarDevices.value
+    ```
+
+    Select **Insert**
 
     ![Power Fx formula for variable value](assets/7.3_23_PowerFxFormula.png)
+
+1. **Save** the topic.
 
 1. Next we need to update the agent instructions. Select the **Overview** tab and select **Edit**.
 
@@ -694,15 +702,15 @@ Let's begin!
 
     ![Add instructions](assets/7.3_25_AddInstructions.png)
 
-1. Type in the forward slash character `/` and the list of topics will appear. Select the **Available devices** topic.
+4. Type in the forward slash character `/` and the list of topics will appear. Select the **Available devices** topic.
 
     ![Reference trigger](assets/7.3_26_SelectAvailableDevicesTopic.png)
 
-1. **Save** the updated instructions.
+5. **Save** the updated instructions.
 
     ![Save instructions](assets/7.3_27_SaveUpdatedInstructions.png)
 
-1. We're now going to test our updated agent. Select **Test** on the upper right to display the test pane and **refresh** the test pane. Enter the following message to the agent.
+6. We're now going to test our updated agent. Select **Test** on the upper right to display the test pane and **refresh** the test pane. Enter the following message to the agent.
 
     ```text
     I need a laptop
@@ -710,29 +718,29 @@ Let's begin!
 
     ![Test](assets/7.3_28_Test.png)
 
-1. Before the agent can proceed, the user needs to verify their connection can be used. Select **Allow**.
+7. Before the agent can proceed, the user needs to verify their connection can be used. Select **Allow**.
 
     ![Select allow](assets/7.3_29_SelectAllow.png)
 
-1. The agent will execute the SharePoint tool that retrieves a filtered list of devices where the device type equals "laptop" and the status equals "available," from the Power Fx expression used. A response formatted in the form of bullet points will be returned for the user to read.
+8. The agent will execute the SharePoint tool that retrieves a filtered list of devices where the device type equals "laptop" and the status equals "available," from the Power Fx expression used. A response formatted in the form of bullet points will be returned for the user to read.
 
     ![Response of test](assets/7.3_30_TestResponse.png)
 
-1. One last thing to learn about is viewing the connections used by viewing the _Manage your connections_ page of the agent. Select the **ellipsis (...)** and select **Manage Connection**.
+9.  One last thing to learn about is viewing the connections used by viewing the _Manage your connections_ page of the agent. Select the **ellipsis (...)** and select **Manage Connection**.
 
     ![Manage connection](assets/7.3_31_ManageConnections.png)
 
-1. This page is where we can see all the connections used by the agent. Currently, only one connection is listed which is associated to the SharePoint tool that was added to the Topic. Select **1 tool** in the **Used By** column.
+10. This page is where we can see all the connections used by the agent. Currently, only one connection is listed which is associated to the SharePoint tool that was added to the Topic. Select **1 tool** in the **Used By** column.
 
     ![Used By](assets/7.3_32_UsedBy.png)
 
-1. This is where we can see the details of the Get items action and remember the _usage description_ we entered earlier? This is where we'll see the usage description. Select **Close**.
+11. This is where we can see the details of the Get items action and remember the _usage description_ we entered earlier? This is where we'll see the usage description. Select **Close**.
 
     > This lets us know what actions are used and the purpose of it. This keeps our connections organized 📁.
 
     ![Usage description](assets/7.3_33_UsedByInformation.png)
 
-1. Go back to your browser tab with Copilot Studio and **refresh** the test pane to clear the test.
+12. Go back to your browser tab with Copilot Studio and **refresh** the test pane to clear the test.
 
 ## ✅ Mission Complete
 
