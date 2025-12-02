@@ -630,7 +630,9 @@ Let's begin!
     Concatenate("field_1 eq 'Available' and field_4 eq '", Topic.VarDeviceType, "'")
     ```
 
-    Select **Insert**.
+    (Field mappings for the underlying list are field_1 = Status and field_4 = Asset Type)
+    
+ 1.    Select **Insert**.
 
     ![Enter Power Fx expression and select insert](assets/7.3_13_EnterFormula.png)
 
@@ -702,15 +704,15 @@ Let's begin!
 
     ![Add instructions](assets/7.3_25_AddInstructions.png)
 
-4. Type in the forward slash character `/` and the list of topics will appear. Select the **Available devices** topic.
+1. Type in the forward slash character `/` and the list of topics will appear. Select the **Available devices** topic.
 
     ![Reference trigger](assets/7.3_26_SelectAvailableDevicesTopic.png)
 
-5. **Save** the updated instructions.
+1. **Save** the updated instructions.
 
     ![Save instructions](assets/7.3_27_SaveUpdatedInstructions.png)
 
-6. We're now going to test our updated agent. Select **Test** on the upper right to display the test pane and **refresh** the test pane. Enter the following message to the agent.
+1. We're now going to test our updated agent. Select **Test** on the upper right to display the test pane and **refresh** the test pane. Enter the following message to the agent.
 
     ```text
     I need a laptop
@@ -718,29 +720,29 @@ Let's begin!
 
     ![Test](assets/7.3_28_Test.png)
 
-7. Before the agent can proceed, the user needs to verify their connection can be used. Select **Allow**.
+1. Before the agent can proceed, the user needs to verify their connection can be used. Select **Allow**.
 
     ![Select allow](assets/7.3_29_SelectAllow.png)
 
-8. The agent will execute the SharePoint tool that retrieves a filtered list of devices where the device type equals "laptop" and the status equals "available," from the Power Fx expression used. A response formatted in the form of bullet points will be returned for the user to read.
+1. The agent will execute the SharePoint tool that retrieves a filtered list of devices where the device type equals "laptop" and the status equals "available," from the Power Fx expression used. A response formatted in the form of bullet points will be returned for the user to read.
 
     ![Response of test](assets/7.3_30_TestResponse.png)
 
-9.  One last thing to learn about is viewing the connections used by viewing the _Manage your connections_ page of the agent. Select the **ellipsis (...)** and select **Manage Connection**.
+1. One last thing to learn about is viewing the connections used by viewing the _Manage your connections_ page of the agent. Select the **ellipsis (...)** and select **Manage Connection**.
 
     ![Manage connection](assets/7.3_31_ManageConnections.png)
 
-10. This page is where we can see all the connections used by the agent. Currently, only one connection is listed which is associated to the SharePoint tool that was added to the Topic. Select **1 tool** in the **Used By** column.
+1. This page is where we can see all the connections used by the agent. Currently, only one connection is listed which is associated to the SharePoint tool that was added to the Topic. Select **1 tool** in the **Used By** column.
 
     ![Used By](assets/7.3_32_UsedBy.png)
 
-11. This is where we can see the details of the Get items action and remember the _usage description_ we entered earlier? This is where we'll see the usage description. Select **Close**.
+1. This is where we can see the details of the Get items action and remember the _usage description_ we entered earlier? This is where we'll see the usage description. Select **Close**.
 
     > This lets us know what actions are used and the purpose of it. This keeps our connections organized 📁.
 
     ![Usage description](assets/7.3_33_UsedByInformation.png)
 
-12. Go back to your browser tab with Copilot Studio and **refresh** the test pane to clear the test.
+1. Go back to your browser tab with Copilot Studio and **refresh** the test pane to clear the test.
 
 ## ✅ Mission Complete
 
