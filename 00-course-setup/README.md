@@ -41,9 +41,9 @@ There are three ways to get a working environment for this course. **Pick one** 
 A pool of pre-provisioned loaner accounts is available for this course. These accounts already have a **developer environment**, **publishing enabled**, and the **Contoso IT SharePoint site** set up for you — so once you log in, you're ready to build.
 
 >[!IMPORTANT]
->There are **only 25 logins** available. To support a larger room, **pair up — up to 4 people per login** (one person drives, one navigates). If all logins are taken, use **Path B (Power Up)** or **Path C (Trials)** instead — each gives you your own isolated environment.
+>There are **only 25 logins** available, so several people may share one. That's fine — everyone can build **in parallel** on the same account, as long as each person **adds their initials** to the names they create (see [Sharing a Login](#-sharing-a-login-add-your-initials) below). The initials keep your agents, solutions, publisher prefix, and flows from colliding.
 >
->Do **not** have more than one pair build on the same account at the same time. You share a single environment, so simultaneous builders will collide on agent names, solutions, and the shared SharePoint list.
+>Two things to know: the **publish** and **test-in-Teams** steps run under the single shared identity, so **take turns** on those (or treat them as a facilitator demo). For a fully independent, isolated experience, use **Path B (Power Up)** or **Path C (Trials)** instead.
 
 1. Open the [Request Login Form](https://forms.microsoft.com/r/E0hU0pMcsu)
 1. Provide your name and email address
@@ -177,9 +177,9 @@ Using **Path A (Request Login)** and sharing one account with other participants
 | Agent flow name | `Device Request Flow - ABC` | Flows live at the environment level |
 
 > [!NOTE]
-> Topics and variables live **inside your own agent**, so they only need initials if you're also sharing a single agent (e.g. one person drives while others follow). If each participant builds their own agent, their topics won't collide.
+> **Working in parallel:** each person builds their **own** agent on the shared account. Topics and variables live *inside* your own agent, so they won't collide with anyone else's — only the environment-level names in the table above need your initials.
 >
-> Pairs (2 per login) are the recommended way to share. For fully independent hands-on work, use **Path B (Power Up)** or **Path C (Trials)** so each person gets an isolated tenant.
+> **Publishing & Teams testing:** the **publish** and **test-in-Microsoft-365-Copilot/Teams** steps run under the single shared identity, so **take turns** on those (or have the facilitator demo them). For a fully independent experience, use **Path B (Power Up)** or **Path C (Trials)** so each person gets an isolated tenant.
 
 ---
 
