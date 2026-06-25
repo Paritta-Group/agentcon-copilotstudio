@@ -164,6 +164,25 @@ No matter how you got your environment (Path A, B, or C), open it once in the Po
 
 ---
 
+## 🤝 Sharing a Login? (Add Your Initials)
+
+Using **Path A (Request Login)** and sharing one account with other participants? Because you all build in the **same environment as the same user**, anything you create at the environment level can collide. To keep everyone's work separate, **append your initials to the end of every top-level object you create** throughout the missions:
+
+| Object | Example | Why |
+|--------|---------|-----|
+| Agent name | `Contoso Tech Support Pro - ABC` | Avoids a list full of identical agents |
+| Solution display name | `Contoso Helpdesk Agent - ABC` | Solution names must be unique in the environment |
+| Solution **Name** (schema) | `ContosoHelpdeskAgentABC` | The schema name must be unique |
+| Publisher **prefix** | `ctsabc` | **Required** — the prefix must be unique; lowercase letters/numbers only, no spaces |
+| Agent flow name | `Device Request Flow - ABC` | Flows live at the environment level |
+
+> [!NOTE]
+> Topics and variables live **inside your own agent**, so they only need initials if you're also sharing a single agent (e.g. one person drives while others follow). If each participant builds their own agent, their topics won't collide.
+>
+> Pairs (2 per login) are the recommended way to share. For fully independent hands-on work, use **Path B (Power Up)** or **Path C (Trials)** so each person gets an isolated tenant.
+
+---
+
 ## ✅ Mission Complete
 
 You've successfully:

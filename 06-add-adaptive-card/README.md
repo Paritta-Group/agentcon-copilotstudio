@@ -13,6 +13,9 @@ Agents, your mission is to infiltrate the static user experience and replace it 
 > [!NOTE]
 > Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
+> [!TIP] 🤝 Sharing a login?
+> If several participants share this account, add **your initials** to the end of each name you create. Topics live inside your own agent, so they only collide if you're also sharing a single agent — in that case suffix your topic names too (for example `... - ABC`). Full guidance: [Course Setup → Sharing a Login](../00-course-setup/README.md#-sharing-a-login-add-your-initials).
+
 ## 🔎 Objectives
 
 In this mission, you’ll learn:
@@ -281,6 +284,8 @@ Let's begin!
     ```text
     Request device
     ```
+
+    > 🤝 **Sharing a single agent?** If several people build in the same agent, append your initials to the topic name too, e.g. `Request device - ABC`.
 
     Enter the following as the description for the trigger.
 

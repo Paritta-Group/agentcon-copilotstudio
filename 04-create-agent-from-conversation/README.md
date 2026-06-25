@@ -19,6 +19,9 @@ Let’s build your agent from the ground up.
 > [!NOTE]
 > Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
+> [!TIP] 🤝 Sharing a login?
+> If several participants share this account, add **your initials** to the end of each name you create in this lab — your agent, solution, publisher prefix, and agent flow (for example `... - ABC`). This prevents "name already exists" errors and keeps everyone's work separate. Full guidance: [Course Setup → Sharing a Login](../00-course-setup/README.md#-sharing-a-login-add-your-initials).
+
 ## 🔎 Objectives
 
 In this mission, you’ll learn:
@@ -329,6 +332,8 @@ If you have not set up the **Contoso Agent** solution, please head back to [Less
     ```text
     Contoso Helpdesk Agent
     ```
+
+    > 🤝 **Sharing a login?** Append your initials, e.g. `Contoso Helpdesk Agent - ABC`.
 
     ![Update agent name](./assets/6.1_09_AgentName.png)
 

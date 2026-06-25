@@ -15,6 +15,9 @@ By mission's end, you'll have created an end-to-end device request automation th
 > [!NOTE]
 > Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
+> [!TIP] 🤝 Sharing a login?
+> If several participants share this account, add **your initials** to the **agent flow name** you create in this lab (for example `Device Request Flow - ABC`) — flows live at the environment level and will otherwise be hard to tell apart. Full guidance: [Course Setup → Sharing a Login](../00-course-setup/README.md#-sharing-a-login-add-your-initials).
+
 ## 🔎 Objectives
 
 In this mission, you’ll learn:
@@ -761,6 +764,8 @@ In this exercise, we'll create an agent flow that retrieves the SharePoint item 
     ```text
     Send device request email
     ```
+
+    > 🤝 **Sharing a login?** Append your initials, e.g. `Send device request email - ABC`.
 
     For the **Description**, copy and paste the following.
 

@@ -15,6 +15,9 @@ With Topics and Triggers, your agent can:
 > [!NOTE]
 > Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
+> [!TIP] 🤝 Sharing a login?
+> If several participants share this account, add **your initials** to the end of each name you create. Topics and variables live inside your own agent, so they only collide if you're also sharing a single agent — in that case suffix your topic and variable names too (for example `... - ABC`). Full guidance: [Course Setup → Sharing a Login](../00-course-setup/README.md#-sharing-a-login-add-your-initials).
+
 - Recognize intent
 
 - Route conversations with logic
@@ -479,6 +482,8 @@ Let's begin!
     ```text
     Available devices
     ```
+
+    > 🤝 **Sharing a single agent?** If several people build in the same agent, append your initials to the topic name too, e.g. `Available devices - ABC`.
 
     Enter a trigger description that outlines what the topic does. Copy and paste the following.
 

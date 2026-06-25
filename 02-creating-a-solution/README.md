@@ -17,6 +17,9 @@ Let’s pack up.
 > [!NOTE]
 > Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
+> [!TIP] 🤝 Sharing a login?
+> If several participants share this account, add **your initials** to the end of each name you create in this lab — your agent, solution, publisher prefix, and agent flow (for example `... - ABC`). This prevents "name already exists" errors and keeps everyone's work separate. Full guidance: [Course Setup → Sharing a Login](../00-course-setup/README.md#-sharing-a-login-add-your-initials).
+
 ## 🔎 Objectives
 
 In this mission, you’ll learn:
@@ -230,6 +233,8 @@ The following are the security roles that enables users to create a solution in 
     cts
     ```
 
+    > 🤝 **Sharing a login?** The publisher **Display name**, **Name**, and **Prefix** must each be unique in the environment — append your initials, e.g. `Contoso Solutions ABC`, `ContosoSolutionsABC`, and prefix `ctsabc` (lowercase letters/numbers only, no spaces).
+
     By default, the **Choice value** prefix will display an integer value. Update this integer value to the nearest thousand. For example, in my screenshot below, it was initially `77074`. Update this from `77074` to `77000`.
 
     ![Solutions](./assets/4.1_04_PublisherProperties.png)  
@@ -263,6 +268,8 @@ High five, you've now created a Solution Publisher! 🙌🏻 We'll next learn ho
     ```text
     ContosoHelpdeskAgent
     ```
+
+    > 🤝 **Sharing a login?** Append your initials here too, e.g. display name `Contoso Helpdesk Agent - ABC` and name `ContosoHelpdeskAgentABC`.
 
     Since we're creating a new solution, the [**Version** number](https://learn.microsoft.com/power-apps/maker/data-platform/update-solutions#understanding-version-numbers-for-updates/?WT.mc_id=power-172615-ebenitez) by default will be `1.0.0.0`.
 

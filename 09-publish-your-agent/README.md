@@ -17,6 +17,9 @@ Let’s launch your agent into action.
 > [!NOTE]
 > Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
+> [!TIP] 🤝 Sharing a login?
+> If several participants share this account, the agent you publish inherits the name you gave it — make sure your **initials** are on it (e.g. `... - ABC`) so it's identifiable in the shared org catalog. Full guidance: [Course Setup → Sharing a Login](../00-course-setup/README.md#-sharing-a-login-add-your-initials).
+
 ## 🔎 Objectives
 
 📖 This lesson covers:

@@ -17,6 +17,9 @@ Success means building agents that initiate value - not just respond to it.
 > [!NOTE]
 > Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
+> [!TIP] 🤝 Sharing a login?
+> If several participants share this account, add **your initials** to the end of each name you create in this lab — your agent, solution, publisher prefix, and agent flow (for example `... - ABC`). This prevents "name already exists" errors and keeps everyone's work separate. Full guidance: [Course Setup → Sharing a Login](../00-course-setup/README.md#-sharing-a-login-add-your-initials).
+
 ## 🔎 Objectives
 
 📖 This lesson will cover:
