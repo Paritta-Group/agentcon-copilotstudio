@@ -2,6 +2,10 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION CTRL-ALT-PACKAGE`
 
+🎥 **Watch the Walkthrough**
+
+[![Create a solution video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=1iATbkgfcpU "Watch the walkthrough on YouTube")
+
 ## 🎯 Mission Brief
 
 Agent Maker, welcome to your next tactical operation. In this mission, you’ll learn to assemble a Solution - the official deployment vehicle for your IT Helpdesk Agent built with Microsoft Copilot Studio. Think of this as creating a digital briefcase that holds your agent and it's artifacts.
@@ -9,6 +13,9 @@ Agent Maker, welcome to your next tactical operation. In this mission, you’ll 
 Every agent needs a well-structured home. That’s what a Power Platform solution provides - order, portability, and readiness for production.
 
 Let’s pack up.
+
+> [!NOTE]
+> Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
 ## 🔎 Objectives
 
@@ -32,7 +39,7 @@ In Copilot Studio, every agent you create is stored in a Power Platform solution
 
 Solutions traditionally have been created in the **Power Apps maker portal** - a web based interface where you can build and customize apps, Dataverse, flows, explore AI components and more.
 
-   ![Solutions](assets/4.0_01_Solutions.png)
+   ![Solutions](./assets/4.0_01_Solutions.png)
 
 In Copilot Studio, there is now the **Solution Explorer** where you can manage your solutions directly. You no longer need to switch to the Power Apps maker portal to manage your solutions, it can be done right inside Copilot Studio 🪄
 
@@ -46,7 +53,7 @@ This means you can do the usual solution-related tasks:
 - **Create and manage solution pipelines** - automate the deployment of solutions between environments.
 - **Git integration** - enables developers to connect solutions with Git repositories for version control, collaboration and ALM. Intended to be used in developer environments only.
 
-   ![Solutions](assets/4.0_02_CopilotStudioSolutionExplorer.png)
+   ![Solutions](./assets/4.0_02_CopilotStudioSolutionExplorer.png)
 
 There are two types of solutions:
 
@@ -56,6 +63,9 @@ There are two types of solutions:
 ## 🤔 Why _should_ I use a Solution for my agent?
 
 Think of Solutions as a _toolbox_. When you need to fix or build something (an agent) in a different location (environment), you gather all the necessary tools (components) and put them in your toolbox (Solution). You can then carry this toolbox to the new location (environment) and use the tools (components) to complete your work, or add new tools (components) to customize your agent or project you're building.
+
+> [!NOTE] Elaiza, your friendly cloud advocate popping in here 🙋🏻‍♀️ to share some words:
+> We have a saying in New Zealand, "Be a tidy Kiwi!" which is a call to action for New Zealanders 🥝 to take responsibility for their environment by disposing of litter properly and keeping public spaces clean. We can use the same context for agents by keeping everything related to your agent organized and portable, and it'll help you maintain a tidy environment.
 
 It's good practice to create an agent in a dedicated solution in your source (developer) environment. Here's why solutions are valuable:
 
@@ -101,13 +111,13 @@ When you create a solution, you must choose a publisher. This publisher defines:
 
 1. **Supports ALM** - when moving solutions between environments (Dev → Test → Prod), the publisher helps track ownership and maintain consistency.
 
-### ✨ Example
-
-Let’s say you create a publisher called Contoso Solutions with the prefix `cts_`.
-
-If you add a custom column called _Priority_, it will be stored as `cts_Priority` in the solution.
-
-Anyone who comes across the column at a solution level regardless of what environment they're in, they can easily identify it as a column that's associated to Contoso Solutions.
+> [!TIP] ✨ Example
+>
+> Let’s say you create a publisher called Contoso Solutions with the prefix `cts_`.
+>
+> If you add a custom column called _Priority_, it will be stored as `cts_Priority` in the solution.
+>
+> Anyone who comes across the column at a solution level regardless of what environment they're in, they can easily identify it as a column that's associated to Contoso Solutions.
 
 ## 🧭 Power Platform Solution lifecycle
 
@@ -125,15 +135,15 @@ So now you understand the purpose of a Solution, let's next learn about the life
 
 **6. Apply Patches, Updates or Upgrades** - make improvements or fixes using patches, updated, or upgrades. 🔁 Repeat the cycle!
 
-### ✨ Example
-
-Imagine you're building an IT helpdesk agent to help employees with issues such as device problems, network troubleshooting, printer setup and more.
-
-- You start in a Development environment using an unmanaged solution.
-
-- Once it's ready, you export it as a managed solution and import it into a target environment such as a System Test or User Acceptance Testing (UAT) environment.
-
-- After testing, you move it to the Production environment - all without touching the original development version.
+> [!TIP] ✨ Example
+>
+> Imagine you're building an IT helpdesk agent to help employees with issues such as device problems, network troubleshooting, printer setup and more.
+>
+> - You start in a Development environment using an unmanaged solution.
+>
+> - Once it's ready, you export it as a managed solution and import it into a target environment such as a System Test or User Acceptance Testing (UAT) environment.
+>
+> - After testing, you move it to the Production environment - all without touching the original development version.
 
 ## 🧪 Lab 02: Create a new Solution
 
@@ -157,44 +167,44 @@ To make sure everything works smoothly, check that you have the right security r
 
 The following are the security roles that enables users to create a solution in their environment.
 
-| Security role    | Description |
+| Security role | Description |
 | ---------- | ---------- |
-| Environment Maker | Provides the necessary permissions to create, customize, and manage resources within a specific environment, including solutions  |
-| System Customizer  | Wider permissions than Environment Maker, including the ability to customize the environment and manage security roles |
-| System Administrator   | Highest level of permissions and can manage all aspects of the environment, including creating and assigning security roles     |
+| Environment Maker | Provides the necessary permissions to create, customize, and manage resources within a specific environment, including solutions |
+| System Customizer | Wider permissions than Environment Maker, including the ability to customize the environment and manage security roles |
+| System Administrator | Highest level of permissions and can manage all aspects of the environment, including creating and assigning security roles |
 
 #### Developer environment
 
->[!WARNING]
-Make sure you switch to your dedicated developer environment, it should have your name in it (i.e., Participant 001).
+> [!WARNING] Switch to your environment
+> Make sure you switch to your dedicated developer environment. For details, see [Lesson 00 - Course Setup - Step 3: Create new developer environment](../00-course-setup/README.md#step-3-create-new-developer-environment).
 
-1. On the upper right, select **blank area** next to the **Cog wheel** icon and switch from the default environment to your environment, for example **Adele Vance's environment**.
+1. In Copilot Studio, from the left navigation, select the **environment** icon and switch from the default environment to your environment, for example **Adele Vance's environment**.
 
-    ![Developer environment](assets/4.0_03_DeveloperEnvironment.png)
+    ![Developer environment](./assets/4.0_03_DeveloperEnvironment.png)
 
 ### 2.1 Create a Solution publisher
 
-1. Using the same Copilot Studio environment used in the previous lesson, select the **ellipsis icon (. . .)** on the left hand side menu in Copilot Studio. Select **Solutions** under the **Explore** header.
+1. From the left navigation, select the **ellipsis** icon near the bottom, then under **Explore** select **Solutions**.
 
-    ![Solutions](assets/4.1_01_Solutions.png)
+    ![Solutions](./assets/4.1_01_Solutions.png)
 
 1. The **Solution Explorer** in Copilot Studio will load. Select **+ New solution**
 
-    ![Solutions](assets/4.1_02_NewSolution.png)
+    ![Solutions](./assets/4.1_02_NewSolution.png)
 
 1. The **New solution** pane will appear where we can define the details of our solution. First, we need to create a new publisher. Select **+ New publisher**.
 
-    ![Solutions](assets/4.1_03_NewPublisher.png)  
+    ![Solutions](./assets/4.1_03_NewPublisher.png)  
 
 1. The **Properties** tab of the **New publisher** pane will appear with required and non-required fields to be populated in the **Properties** tab. This is where we can outline the details of the publisher which will be used as the label or brand that identifies who created or owns the solution.
 
-    | Property    | Description | Required |
-    | ---------- | ---------- | :----------: |
-    | Display name | Display name for the publisher | Yes   |
-    | Name  | The unique name and schema name for the publisher  | Yes    |
-    | Description   | Outlines the purpose of the solution    | No     |
-    | Prefix    | Publisher prefix which will be applied to newly created components   | Yes      |
-    | Choice value prefix   | Generates a number based on the publisher prefix. This number is used when you add options to choices and provides an indicator of which solution was used to add the option.   | Yes      |
+    |Property|Description|Required|
+    |----------|----------|:----------:|
+    |Display name|Display name for the publisher|Yes|
+    |Name|The unique name and schema name for the publisher|Yes|
+    |Description|Outlines the purpose of the solution|No|
+    |Prefix|Publisher prefix which will be applied to newly created components|Yes|
+    |Choice value prefix|Generates a number based on the publisher prefix. This number is used when you add options to choices and provides an indicator of which solution was used to add the option.|Yes|
 
     Copy and paste the following as the **Display name**,
 
@@ -222,19 +232,19 @@ Make sure you switch to your dedicated developer environment, it should have you
 
     By default, the **Choice value** prefix will display an integer value. Update this integer value to the nearest thousand. For example, in my screenshot below, it was initially `77074`. Update this from `77074` to `77000`.
 
-    ![Solutions](assets/4.1_04_PublisherProperties.png)  
+    ![Solutions](./assets/4.1_04_PublisherProperties.png)  
 
 1. If you want to provide the contact details for the Solution, select the **Contact** tab and populate the following columns displayed.
 
-    ![Solutions](assets/4.1_05_Contact.png)
+    ![Solutions](./assets/4.1_05_Contact.png)
 
 1. Select the **Properties** tab and select **Save** to create the Publisher.
 
-    ![Solutions](assets/4.1_06_SavePublisher.png)
+    ![Solutions](./assets/4.1_06_SavePublisher.png)
 
 1. The New publisher pane will close and you'll be brought back to the **New solution** pane with the newly created Publisher selected.
 
-    ![Solutions](assets/4.1_07_PublisherSelected.png)  
+    ![Solutions](./assets/4.1_07_PublisherSelected.png)  
 
 High five, you've now created a Solution Publisher! 🙌🏻 We'll next learn how to create a new custom solution.
 
@@ -258,11 +268,11 @@ High five, you've now created a Solution Publisher! 🙌🏻 We'll next learn ho
 
     Tick the **Set as your preferred solution** checkbox.
 
-    ![Solutions](assets/4.2_01_SolutionDetails_.png)  
+    ![Solutions](./assets/4.2_01_SolutionDetails_.png)  
 
 1. Expand the **More options** to see additional details that can be provided in a solution.
 
-    ![Solutions](assets/4.2_02_MoreOptions.png)
+    ![Solutions](./assets/4.2_02_MoreOptions.png)
 
 1. You'll see the following,
 
@@ -276,17 +286,17 @@ High five, you've now created a Solution Publisher! 🙌🏻 We'll next learn ho
 
     Select **Create**.
 
-    ![Solutions](assets/4.2_03_Create.png)
+    ![Solutions](./assets/4.2_03_Create.png)
 
 1. The solution for Contoso Helpdesk Agent has now been created. There will be zero components until we create an agent in Copilot Studio.
 
     Select the **back arrow** icon to return to the Solution Explorer.
 
-    ![Solutions](assets/4.2_04_SolutionCreated.png)
+    ![Solutions](./assets/4.2_04_SolutionCreated.png)
 
 1. Notice how the Contoso Helpdesk Agent now displays as the **Current preferred solution** since we ticked the **Set as your preferred solution** checkbox earlier.
 
-    ![Solutions](assets/4.2_05_CurrentPreferredSolutionSelected.png)
+    ![Solutions](./assets/4.2_05_CurrentPreferredSolutionSelected.png)
 
 ## ✅ Mission Complete
 
@@ -294,7 +304,7 @@ Congratulations! 👏🏻 You've created a Publisher and used it in your newly c
 
 Well done, Agent Maker. A tidy digital footprint is the first step toward operability at scale. Now you have the tools and the mindset for sustainable, enterprise-ready agent development.
 
-This is the end of **Lab 04 - Creating a Solution**, select the link below to move to the next lesson. Your solution created in this lab will be used in the next lesson's lab.
+This is the end of **Lab 02 - Creating a Solution**, select the link below to move to the next lesson. Your solution created in this lab will be used in the next lesson's lab.
 
 ⏭️ [Move to **Get started quickly with pre-built agents** lesson](../03-using-prebuilt-agents/README.md)
 

@@ -2,9 +2,16 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION INTERFACE UPLIFT`
 
+🎥 **Watch the Walkthrough**
+
+[![Adaptive cards video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=RhIlzYHPCXo "Watch the walkthrough on YouTube")
+
 ## 🎯  Mission Brief
 
 Agents, your mission is to infiltrate the static user experience and replace it with rich, dynamic, and actionable Adaptive Cards. You’ll deploy JSON payloads and Power Fx formulas to transform Copilot Studio conversations from basic Q&A into fully interactive engagements. Your goal is to gather user input, present data beautifully, and direct conversations with precision and style. Fail to adapt, and your users may defect to less intelligent interfaces.
+
+> [!NOTE]
+> Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
 ## 🔎 Objectives
 
@@ -18,7 +25,7 @@ In this mission, you’ll learn:
 
 ## ⏭️ Skip to Lab
 
-🧪 [Lab 06: Add adaptive cards and enhance topic capabilities](#-lab-06-add-adaptive-cards-and-enhance-topic-capabilities)
+🧪 [Lab 06: Add adaptive cards and enhance topic capabilities](#-lab-06---add-adaptive-cards-and-enhance-topic-capabilities)
 
 ## 🤔 What is an Adaptive Card?
 
@@ -58,12 +65,12 @@ This is one of the options to use when adding an adaptive card to your topic.
 
 ## 👀 I see another option for building an adaptive card using _formula_
 
-Remember how we learnt about Power Fx in [Mission 07 - Using Power Fx in your nodes](../07-add-new-topic-with-trigger/README.md#what-power-fx-can-do-in-topics) The same can be applied in Adaptive Cards within Copilot Studio.
+Remember how we learnt about Power Fx in [Mission 05 - Using Power Fx in your nodes](../05-add-new-topic-with-trigger/README.md#what-power-fx-can-do-in-topics) The same can be applied in Adaptive Cards within Copilot Studio.
 
 As a recap,
 
->[!NOTE]
-    Power Fx is a low-code programming language used to add logic and dynamic behavior to your agent. It's the same language used in Microsoft Power Apps, and it's designed to be simple and Excel-like, making it easy for developers and non-developers.
+> [!NOTE]
+> Power Fx is a low-code programming language used to add logic and dynamic behavior to your agent. It's the same language used in Microsoft Power Apps, and it's designed to be simple and Excel-like, making it easy for developers and non-developers.
 
 ### How Power Fx works in Adaptive Cards
 
@@ -153,14 +160,12 @@ This is the **raw JSON code** behind your card. Advanced users can edit this dir
 
 Even if you're new to the Adaptive Card designer, it's helpful to see how the visual design translates into codes.
 
->[!TIP]
-Check out the Adaptive Card samples:
-
-    1. Browse to [https://adaptivecards.microsoft.com/designer](https://adaptivecards.microsoft.com/designer).
-    2. Select **New card** to see a list of samples you can choose and modify.
-    3. Note that this designer is external (web-based). When you build your card in the web-based Adaptive Card Designer, copy the JSON from the Card Payload Editor.
-    4. Paste the JSON into your adaptive card in your agent in Copilot Studio.
-
+> [!TIP] Tip - Check out the Adaptive Card samples
+>
+> 1. Browse to [https://adaptivecards.microsoft.com/designer](https://adaptivecards.microsoft.com/designer).
+> 1. Select **New card** to see a list of samples you can choose and modify.
+> 1. Note that this designer is external (web-based). When you build your card in the web-based Adaptive Card Designer, copy the JSON from the Card Payload Editor.
+> 1. Paste the JSON into your adaptive card in your agent in Copilot Studio.
 
 ![Adaptive Card Designer Samples](assets/8.0_04_AdaptiveCardDesignerSamples.png)
 
@@ -235,12 +240,9 @@ Here are some best practices for creating Adaptive Cards for agents in Copilot S
     - Bind card elements to variables or outputs from nodes using Power Fx to personalize the user experience.
     - For example, show the user's name or current status dynamically.
 
-## 🧪 Lab 06: Add adaptive cards and enhance topic capabilities
+## 🧪 Lab 06 - Add adaptive cards and enhance topic capabilities
 
 We're now going to learn how to enhance our topic with adaptive cards and using advanced functionality of topics and nodes.
-
-- [6.1 Create a new topic with an adaptive card for user to submit their request](#61-create-a-new-topic-with-an-adaptive-card-for-user-to-submit-their-request)
-- [6.2 Update agent instructions to invoke Request device topic](#62-update-agent-instructions-to-invoke-request-device-topic)
 
 ### ✨ Use case
 
@@ -256,11 +258,13 @@ Let's begin!
 
 1. **SharePoint list**
 
-    We'll be using the **Devices** SharePoint list from previous missions.
+    We'll be using the **Devices** SharePoint list from [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
 
-2. **Contoso Helpdesk Copilot**
+    If you have not set up the **Devices** SharePoint list, please head back to [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/README.md#step-4-create-new-sharepoint-site).
 
-    We're going to use the same agent created previously in [Lesson 04 - Create a custom agent using natural language with Copilot and grounding it with your data](../04-create-agent-from-conversation/README.md).
+1. **Contoso Helpdesk Copilot**
+
+    We're going to use the same agent created previously in [Lesson 04 - Create a custom agent using natural language with AI and grounding it with your data](../04-create-agent-from-conversation/README.md).
 
 ### 6.1 Create a new topic with an adaptive card for user to submit their request
 
@@ -290,7 +294,7 @@ Let's begin!
 
     ![Select Ask with adaptive card node](assets/8.1_03_AddAskWithAdaptiveCard.png)
 
-1. Select the node and the **Adaptive Card Node properties** pane will appear. We're now going to edit the JSON. Select **Edit adaptive card**. Select **Edit adaptive card**.
+1. Select the node and the **Adaptive Card Node properties** pane will appear. We're now going to edit the JSON. Select **Edit adaptive card**.
 
     ![Edit adaptive card](assets/8.1_04_EditAdaptiveCard.png)
 
@@ -314,8 +318,8 @@ Let's begin!
 
 1. Click into the **Card payload editor** and select all lines using the Windows keyboard shortcut of _Ctrl + A_ or using the Mac keyboard shortcut of _Command + A_, followed by deleting the lines. **Paste** the JSON from the [Request devices .JSON file](assets/8.1_RequestDevice.json).
 
-    >[!TIP]
-    Right-click -> Open link in new tab to open json in a different browser tab from this guide.
+    > [!TIP]
+    > Right-click -> Open link in new tab to open json in a different browser tab from this guide.
 
     ![Clear card payload editor](assets/8.1_09_SelectAll.png)
 
@@ -335,37 +339,38 @@ Let's begin!
 
     ![Device request adaptive card](assets/8.1_12_DeviceRequestCard.png)
 
-5. Scroll to the bottom of the node and you'll see output variables. The `commentsId` and the `deviceSelectionId` were defined in the element properties. These two variables will store values from the card elements the users interact with. These values will be used downstream in the topic, which we'll learn about in the next lesson's lab.
+1. Scroll to the bottom of the node and you'll see output variables. The `commentsId` and the `deviceSelectionId` were defined in the element properties. These two variables will store values from the card elements the users interact with. These values will be used downstream in the topic, which we'll learn about in the next lesson's lab.
 
     ![Node variable outputs](assets/8.1_13_DeviceRequestCardOutputs.png)
 
-6. Let's next update the card from JSON to formula as we'll use Power Fx again to loop through the items returned in the **Get items** SharePoint connector action, stored in the **global variable**, `Global.VarDevices.value`, via the `value` property of the JSON response.
+1. Let's next update the card from JSON to formula as we'll use Power Fx again to loop through the items returned in the **Get items** SharePoint connector action, stored in the **global variable**, `Global.VarDevices.value`, via the `value` property of the JSON response.
 
-    > We created this global variable in [Lab 05 - Add a new topic with conversation nodes, 5.3 Add a tool using a connector](../05-add-new-topic-with-trigger/README.md#53-add-a-tool-using-a-connector).
+    > [!NOTE]
+    > We created this global variable in Lab 05
 
     Select the card in the **Ask with Adaptive Card** node, followed by selecting the **chevron** icon and select **Formula**.
 
     ![Change to formula](assets/8.1_14_ChangeToFormula.png)
 
-7. Click on the **expand** icon to enlarge the Formula field.
+1. Click on the **expand** icon to enlarge the Formula field.
 
     ![Click on expand icon](assets/8.1_15_SelectExpand.png)
 
-8. Click into the **Card payload editor** and select all lines using the Windows keyboard shortcut of _Ctrl + A_ or using the Mac keyboard shortcut of _Command + A_, followed by deleting the lines.
+1. Click into the **Card payload editor** and select all lines using the Windows keyboard shortcut of _Ctrl + A_ or using the Mac keyboard shortcut of _Command + A_, followed by deleting the lines.
 
     ![Click into payload card editor](assets/8.1_16_SelectAll.png)
 
     Paste the Formula from the [Request Devices formula file](assets/8.1_RequestDeviceFormula.txt).
 
-9. In the formula, we'll loop through each SharePoint list item using the `For All` function to display the values of `Model` in the title of the choice option, and the SharePoint item `ID` is referenced as the value. We're also wrapping the values with the `If(IsBlank()` functions as the formula expects a value in order to render the adaptive card in the authoring canvas of the topic. Otherwise you'll see a message appear, "Property cannot be null"
+1. In the formula, we'll loop through each SharePoint list item using the `For All` function to display the values of `Model` in the title of the choice option, and the SharePoint item `ID` is referenced as the value. We're also wrapping the values with the `If(IsBlank()` functions as the formula expects a value in order to render the adaptive card in the authoring canvas of the topic. Otherwise you'll see a message appear, "Property cannot be null"
 
     **Close** the card modal.
 
     ![Power Fx Formula](assets/8.1_17_PowerFxFormula.png)
 
-10. **Close** the **Adaptive Card Node properties** pane.
+1. **Close** the **Adaptive Card Node properties** pane.
 
-11. **Save** the topic.
+1. **Save** the topic.
 
     ![Save topic](assets/8.1_18_SaveTopic.png)
 
@@ -380,7 +385,7 @@ Now that we created the new topic that handles the device requests, we need to u
 1. Add a new line below the previous instruction from [Lab 05 - Add a new topic with conversation nodes, 5.3 Add a tool using a connector](../05-add-new-topic-with-trigger/README.md#53-add-a-tool-using-a-connector).
 
     ```text
-    - If the user answers yes to the question of requesting a device, trigger [Request device]. Otherwise if they answer no to the question of requesting a device, trigger [Goodbye].
+    2. If the user answers yes to the question of requesting a device, trigger [Request device]. Otherwise if they answer no to the question of requesting a device, trigger [Goodbye].
     ```
 
     Select the entire topic placeholder in square brackets and delete the placeholder.
@@ -389,7 +394,7 @@ Now that we created the new topic that handles the device requests, we need to u
 
 1. Type in `/Req` and select the **Request devices** topic.
 
-    ![Request devices topic](assets/8.2_03_ReferenceRequestDeviceTopic.png)
+    ![Redirect to Request devices topic](assets/8.2_03_ReferenceRequestDeviceTopic.png)
 
 1. Repeat the same steps for the next topic placeholder, **[Goodbye]**. Select the entire topic placeholder in square brackets and delete the placeholder. Type in `/Goodbye` and select the **Goodbye** topic.
 
@@ -399,9 +404,9 @@ Now that we created the new topic that handles the device requests, we need to u
 
     **Save** the updated instructions.
 
-    ![Redirect to Request device topic](assets/8.2_04_ReferenceGoodbyeTopic.png)
+    ![Redirect to Goodbye topic](assets/8.2_04_ReferenceGoodbyeTopic.png)
 
-1. Let's now test our the redirection from the _Available devices_ topic to the _Request devices_ topic. Select the **Test** to load the testing pane select **Refresh**.
+1. Let's now test our the redirection from the _Available devices_ topic to the _Request devices_ topic. Select the **Test** to load the testing pane and select **Refresh**.
 
     Then select the **Activity map** icon in the test pane, followed by enabling **Track between topics**. This will allow us to see the _Available devices_ topic has redirected to the _Request devices_ topic.
 
@@ -437,7 +442,7 @@ Now that we created the new topic that handles the device requests, we need to u
 
 Congratulations! 👏🏻 You've learnt how to add adaptive cards using Power Fx formulas to display data from variables, and you also learnt how to redirect from one topic to another. Creating bite sized topics makes your agent more organized, but also helps guide users through different parts of the conversation flow with the agent.
 
-This is the end of **Lab 08 - Enhance user interactions with Adaptive Cards**, select the link below to move to the next lesson. We'll expand on the use case in this lab in the following lesson's lab.
+This is the end of **Lab 06 - Enhance user interactions with Adaptive Cards**, select the link below to move to the next lesson. We'll expand on the use case in this lab in the following lesson's lab.
 
 ⏭️ [Move to **Add an agent flow to your Topic for automation** lesson](../07-add-an-agent-flow/README.md)
 

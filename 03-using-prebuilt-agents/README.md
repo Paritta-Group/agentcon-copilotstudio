@@ -2,6 +2,10 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION SAFE TRAVELS`
 
+🎥 **Watch the Walkthrough**
+
+[![Pre-built agent video thumbnail](./images/video-thumbnail.jpg)](https://www.youtube.com/watch?v=NmXsx8WjWuM "Watch the walkthrough on YouTube")
+
 ## 🎯 Mission Brief
 
 Welcome to your next mission in the Copilot Studio Agent Academy. You're about to explore the world of **pre-built agents**—intelligent, purpose-driven agents created by Microsoft to accelerate your deployment and reduce time to value.
@@ -10,7 +14,8 @@ Rather than building from scratch, pre-built agents (also called **agent templat
 
 In this mission, you’ll deploy the **Safe Travels** agent—an agent that helps your users prepare for business travel, understand company policies, and streamline planning.
 
----
+> [!NOTE]
+> Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
 ## 🧭 Objectives
 
@@ -20,8 +25,6 @@ Your goals for this mission are:
 1. Deploy the **Safe Travels** agent template  
 1. Customize the agent’s responses and content  
 1. Test and publish the agent  
-
----
 
 ## 🧠 What Are Pre-Built Agents?
 
@@ -33,23 +36,9 @@ Pre-built agents are turnkey AI agents created by Microsoft that:
 
 These agents are perfect for getting started quickly or learning how agents are structured.
 
----
-
 ## 🧪 Lab 03: Quickly get started with a pre-built agent
 
 We're now going to learn how to select a pre-built agent and customize it.
-
-- [🧰 Mission 03: Using a Pre-Built Agent](#-mission-03-using-a-pre-built-agent)
-  - [🕵️‍♂️ CODENAME: `OPERATION SAFE TRAVELS`](#️️-codename-operation-safe-travels)
-  - [🎯 Mission Brief](#-mission-brief)
-  - [🧭 Objectives](#-objectives)
-  - [🧠 What Are Pre-Built Agents?](#-what-are-pre-built-agents)
-  - [🧪 Lab 03: Quickly get started with a pre-built agent](#-lab-03-quickly-get-started-with-a-pre-built-agent)
-    - [3.1 Launch Copilot Studio](#31-launch-copilot-studio)
-    - [3.2 Choose the Safe Travels Agent Template](#32-choose-the-safe-travels-agent-template)
-    - [3.3 Customize the Agent](#33-customize-the-agent)
-    - [5.4 Test and Publish](#54-test-and-publish)
-  - [✅ Mission Complete](#-mission-complete)
 
 We're going to stick with the example from earlier, where we're going to create a solution in the dedicated Copilot Studio environment to build our IT helpdesk agent in.
 
@@ -61,8 +50,8 @@ Let's begin!
 
 1. Sign in with your Microsoft 365 work or school account
 
->[!WARNING]
-You must be in a tenant where Copilot Studio is enabled. If you don’t see Copilot Studio, revisit [Mission 00](../00-course-setup/README.md) to complete your setup.
+> [!WARNING]
+> You must be in a tenant where Copilot Studio is enabled. If you don’t see Copilot Studio, revisit [Mission 00](../00-course-setup/README.md) to complete your setup.
 
 ### 3.2 Choose the Safe Travels Agent Template
 
@@ -89,10 +78,6 @@ This will create a new agent in your environment based on the Safe Travels confi
 
 Now that the agent is created, let’s tailor it to your organization:
 
-1. Select **Enabled generative AI** to turn on the generative AI feature so that it can use the instructions provided in the template.
-
-    ![Enable Generative Answers](./images/gen-answers.png)
-
 1. Now we'll equip the agent with an additional knowledge source so it can answer questions about Europe travel. To do this, scroll down to the **knowledge** section and select **Add knowledge**
 
     ![Add Knowledge](./images/knowledge.png)
@@ -109,7 +94,7 @@ Now that the agent is created, let’s tailor it to your organization:
 
     ![Add to Agent](./images/add-to-agent.png)
 
-### 5.4 Test and Publish
+### 3.4 Test and Publish
 
 1. Click **Test** in the top-right to launch the test window  
 
@@ -132,8 +117,8 @@ Now that the agent is created, let’s tailor it to your organization:
 
 1. Optionally, add the agent to Microsoft Teams using the built-in **Channels** feature.
 
-!!! note "🧳 Bonus Objective"
-    Try grounding the Safe Travels agent with a SharePoint site or FAQ file to make it more relevant to your company’s travel policies.
+> [!NOTE] 🧳 Bonus Objective
+> Try grounding the Safe Travels agent with a SharePoint site or FAQ file to make it more relevant to your company’s travel policies.
 
 ## ✅ Mission Complete
 

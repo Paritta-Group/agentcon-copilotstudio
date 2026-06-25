@@ -2,11 +2,18 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION STAY ON TOPIC`
 
+🎥 **Watch the Walkthrough**
+
+[![Trigger video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=7iPAZaA8nJs "Watch the walkthrough on YouTube")
+
 ## 🎯  Mission Brief
 
 You’ve built an agent. It listens, learns, and answers questions - but now it’s time to get more tactical. In this mission, you’ll go deep under the hood and teach your agent how to respond to specific prompts with precision.
 
 With Topics and Triggers, your agent can:
+
+> [!NOTE]
+> Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
 - Recognize intent
 
@@ -30,7 +37,7 @@ In this mission, you’ll learn:
 
 ## ⏭️  Skip to Lab
 
-🧪 [Lab 05: Add a new topic with conversation nodes](#-lab-05-add-a-new-topic-with-conversation-nodes)
+🧪 [Lab 05: Add a new topic with conversation nodes](#-lab-05---add-a-new-topic-with-conversation-nodes)
 
 ## 🤔 What is a Topic?
 
@@ -135,8 +142,8 @@ This node lets your agent send messages to users, which can be simple text or ri
 
 You can personalize messages using variables, add multiple message variations for variety, and even customize speech output for voice-enabled channels.
 
-!!! tip
-    Think of it as a "say something" block that helps your agent communicate clearly and interactively with users.
+> [!TIP]
+> Think of it as a "say something" block that helps your agent communicate clearly and interactively with users.
 
 #### Ask a question
 
@@ -149,8 +156,8 @@ You can customize the type of question like text input or use entities for a def
 
 It also supports rich content like images and quick replies, and lets you fine-tune validation, reprompting, and interruption settings to make the conversation flow smoothly.
 
-!!! tip
-    Think of it as an "ask and listen" block that helps your agent interact with users in a structured way that you define.
+> [!TIP]
+> Think of it as an "ask and listen" block that helps your agent interact with users in a structured way that you define.
 
 #### Ask with adaptive card
 
@@ -159,8 +166,8 @@ It also supports rich content like images and quick replies, and lets you fine-t
 
 This node shows rich, interactive cards that users can fill out and submit such as forms with text boxes, buttons, and images. It captures the user's input and stores it in variables, which your agent can use later in the conversation.
 
-!!! tip
-    Think of it as a customizable "form builder" block that makes your agent more engaging and capable of collecting detailed information from users.
+> [!TIP]
+> Think of it as a customizable "form builder" block that makes your agent more engaging and capable of collecting detailed information from users.
 
 #### Add a condition
 
@@ -169,8 +176,8 @@ This node shows rich, interactive cards that users can fill out and submit such 
 
 This node creates decision points in your agent's conversation flow by checking if a variable meets certain criteria. Based on whether the condition is true or false, the agent follows different paths.
 
-!!! tip
-    Think of it as an "if-else" block that helps your agent make decisions depending on user input or stored data in variables.
+> [!TIP]
+> Think of it as an "if-else" block that helps your agent make decisions depending on user input or stored data in variables.
 
 #### Variable management
 
@@ -179,8 +186,8 @@ This node creates decision points in your agent's conversation flow by checking 
 
 This node lets you store and manage information during a conversation, it could be a user's name, answer, or preferences. You can use different types of variables such as text, numbers, or dates, and they can be scoped to a single topic, shared across topics (global), or even pulled from the system or environment.
 
-!!! tip
-    Think of it as a "memory box" that helps your agent remember information and use them as the conversation continues with the user.
+> [!TIP]
+> Think of it as a "memory box" that helps your agent remember information and use them as the conversation continues with the user.
 
 #### Topic management
 
@@ -189,8 +196,8 @@ This node lets you store and manage information during a conversation, it could 
 
 This node allows your agent to jump from one topic to another without restarting the conversation, end the topic, transfer or end the conversation, or go to a different step within the same topic. It helps guide users through different parts of the conversation flow by smoothly transitioning between topics, and you can pass variables between them to keep context.
 
-!!! tip
-    Think of it as a "go to another section/step" block that helps your agent be flexible in chatting with users.
+> [!TIP]
+> Think of it as a "go to another section/step" block that helps your agent be flexible in chatting with users.
 
 #### Add a tool
 
@@ -199,8 +206,8 @@ This node allows your agent to jump from one topic to another without restarting
 
 This node gives your agent capabilities to interact with external systems or perform specific tasks, such as sending emails, checking weather, or accessing databases. You can add tools using built-in connectors, custom APIs, agent flows, prompts, or connect to Model Context Protocol (MCP) servers, and even _graphical user interface_ automation for desktop apps through the computer use tool.
 
-!!! tip
-    Think of tools as "action blocks" that give your agent superpowers to do things beyond _chatting_, such as calling an API, running a process, or collecting user input automatically.
+> [!TIP]
+> Think of tools as "action blocks" that give your agent superpowers to do things beyond _chatting_, such as calling an API, running a process, or collecting user input automatically.
 
 #### Generative answers node
 
@@ -209,8 +216,8 @@ This node gives your agent capabilities to interact with external systems or per
 
 This node enables your agent to respond to user questions using information from various knowledge sources, like websites, documents, SharePoint, or custom data. It can be used as a fallback when no matching topic is found, or within a topic to provide more detailed, dynamic answers based on specific sources you've configured your agent to use.
 
-!!! tip
-    Think of it as a "smart answer block" that helps your agent give helpful, accurate responses by searching trusted content you define.
+> [!TIP]
+> Think of it as a "smart answer block" that helps your agent give helpful, accurate responses by searching trusted content you define.
 
 #### HTTP request node
 
@@ -219,8 +226,8 @@ This node enables your agent to respond to user questions using information from
 
 This node lets your agent connect to external systems by sending REST API calls, like `GET` or `POST` requests. You can customize the request with headers, body content, and even use Power Fx to include dynamic data, then store the response in variables for use later in the conversation.
 
-!!! tip
-    Think of it as a "reach out and get information" block that helps your agent talk to other services such as retrieving user details or sending data to another system.
+> [!TIP]
+> Think of it as a "reach out and get information" block that helps your agent talk to other services such as retrieving user details or sending data to another system.
 
 #### Send an event
 
@@ -229,14 +236,14 @@ This node lets your agent connect to external systems by sending REST API calls,
 
 This node lets your agent send non-message actions to external systems or channels, which can then decide how to respond. You give each event a name and attach a value, which can be a simple number or text, a variable, or a Power Fx formula, and it gets sent as a JSON object.
 
-!!! tip
-    Think of it as a "silent trigger" block that helps your agent do things behind the scenes or communicate with external tools without needing a user to say anything.
+> [!TIP]
+> Think of it as a "silent trigger" block that helps your agent do things behind the scenes or communicate with external tools without needing a user to say anything.
 
 ## 🏋🏻‍♀️ Using Power Fx in your nodes
 
 In Copilot Studio, Power Fx is a low-code programming language used to add logic and dynamic behavior to your agent. It's the same language used in Microsoft Power Apps, and it's designed to be simple and Excel-like, making it easy for developers and non-developers.
 
-![Power Fx expression](assets/7.3_13_EnterFormula.png)
+![Power Fx expression](assets/7.3_09_EnterFormula.png)
 
 ### What Power Fx can do in topics
 
@@ -271,7 +278,7 @@ This allows you to build custom conversation flows from scratch, and you can add
 - You can customize logic using variables, Power Fx, and conditions.
 - It’s perfect for building tailored experiences for specific business needs.
 
-### 2. Create with Copilot
+### 2. Add from description with Copilot
 
 This allows you to describe what you want using natural language, and Copilot will build the conversation for you. Same applies when editing your topic, use natural language and Copilot will review and modify the topic for you.
 
@@ -325,8 +332,8 @@ Sketch a simple conversation flow of how the agent should respond
 - Ask follow-up questions to get details
 - Provide answers or perform actions
 
-!!! tip
-    Keep the conversation short and focused. Only ask what's necessary.
+> [!TIP]
+> Keep the conversation short and focused. Only ask what's necessary.
 
 ### 🔀 Step 4 - Handle different conversation types
 
@@ -387,8 +394,8 @@ Before publishing your topic:
 - Test using real questions or real sample inputs.
 - Make sure it sounds natural and helpful.
 
-!!! tip
-    Apply improvements to your topic accordingly as you test, such as adding more nodes or removing nodes in-place of redirecting to another topic
+> [!TIP]
+> Apply improvements to your topic accordingly as you test, such as adding more nodes or removing nodes in-place of redirecting to another topic
 
 ### ⚠️ Step 7 - Avoid duplicating website content
 
@@ -429,13 +436,9 @@ Agent responds with,
 
 `Your vacation leave request from August 5 to August 10 has been submitted. Your manager will review and get back to you shortly.`
 
-## 🧪 Lab 05: Add a new topic with conversation nodes
+## 🧪 Lab 05 - Add a new topic with conversation nodes
 
 We're now going to learn how to add a new topic with a trigger and tools. This lab will cover creating a topic from blank so that you understand how to customize topics to your needs.
-
-- [5.1 Add a new topic from blank](#51-add-a-new-topic-from-blank)
-- [5.2 Define the trigger inputs and outputs](#52-define-the-trigger-inputs-and-outputs)
-- [5.3 Add a tool using a connector](#53-add-a-tool-using-a-connector)
 
 ### ✨ Use case
 
@@ -451,10 +454,13 @@ Let's begin!
 
 1. **SharePoint list**
 
-    We'll be using the **Devices** SharePoint list.  \*\*Link provided to you in your signup email\*\*.
-2. **Contoso Helpdesk Agent**
+    We'll be using the **Devices** SharePoint list from [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/data-setup.md).
 
-    We're going to use the same agent created previously in [Lesson 04 - Create a custom agent using natural language with Copilot and grounding it with your data](../04-create-agent-from-conversation/README.md).
+    If you have not set up the **Devices** SharePoint list, please head back to [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/data-setup.md).
+
+1. **Contoso Helpdesk Agent**
+
+    We're going to use the same agent created previously in [Lesson 04 - Create a custom agent using natural language with AI and grounding it with your data](../04-create-agent-from-conversation/README.md).
 
 ### 5.1 Add a new topic from blank
 
@@ -474,15 +480,13 @@ Let's begin!
     Available devices
     ```
 
-    ![Name the topic](assets/7.1_03_TopicName.png)
-
-1. Enter a trigger description that outlines what the topic does. Copy and paste the following.
+    Enter a trigger description that outlines what the topic does. Copy and paste the following.
 
     ```text
     This topic helps users find devices that are available from our SharePoint Devices list. User can ask to see available devices and it will return a list of devices that are available which can include laptops, smartphones, accessories and more.
     ```
 
-    ![Enter a name and description for trigger](assets/7.1_04_TriggerDescription.png)
+    ![Enter a name and description for trigger](assets/7.1_03_TopicNameAndDescription.png)
 
 ### 5.2 Define the trigger inputs and outputs
 
@@ -508,13 +512,13 @@ Let's begin!
 
 1. We now need to define our input and output variables. The following are properties that can be defined for topic inputs and outputs.
 
-    | Field    | Value |
-    | ---------- | :--------- |
-    | How will the agent fill this input? | Determines how the agent fills this variable with a value before running the topic. By default it's set to _Dynamically fill with the best option_. Otherwise you can override an input with a value instead of asking the user|
-    | Variable data type  | The data type of the variable. Supported data types are `String`, `Boolean`, `Number`, `Date`, `DateTime`, `DateTimeNoTimeZone`, `Time`, `Record`, `Table`, `Unspecified`, `From sample data` |
-    | Display name   | Name of variable   |
-    | Identify as  | Entity type for the agent to capture the correct value type  |
-    | Description    | The description helps the agent automatically fill inputs before running the topic or generate questions to ask for the values   |
+    | Field | Value |
+    | ----- | ----- |
+    | How will the agent fill this input? | Determines how the agent fills this variable with a value before running the topic. By default it's set to _Dynamically fill with the best option_. Otherwise you can override an input with a value instead of asking the user |
+    | Variable data type | The data type of the variable. Supported data types are `String`, `Boolean`, `Number`, `Date`, `DateTime`, `DateTimeNoTimeZone`, `Time`, `Record`, `Table`, `Unspecified`, `From sample data` |
+    | Display name | Name of variable |
+    | Identify as | Entity type for the agent to capture the correct value type |
+    | Description | The description helps the agent automatically fill inputs before running the topic or generate questions to ask for the values |
 
     The _How will the agent fill this input?_, _Variable data type_ and _Display name_ can remain as-is. Update the **Identify as** property to **User's entire response**.
 
@@ -568,31 +572,13 @@ Let's begin!
 
     ![Select get items](assets/7.3_02_GetItems.png)
 
-1. A new connection needs to be created for the connector. Select the **chevron** icon and select **Create new connection**.
+1. Your user credentials will be used for the Connector as you'll see a green tick icon. Otherwise create a new connection if needed.
 
-    ![Add a tool](assets/7.3_03_CreateNewConnection.png)
-
-1. Two options will be displayed that allows you to connect directly to SharePoint Online or to an on-premises SharePoint. By default the **Connect directly (cloud-services)** option will be selected, which is what we'll use for our connection.
-
-    Select **Create**.
-
-    ![Select Create](assets/7.3_04_SelectCreate.png)
-
-1. Select your signed in user account.
-
-    ![Select signed in user account](assets/7.3_05_SelectSignedInUserAccount.png)
-
-1. Next, you need to confirm your user account can be used for the connection to the SharePoint connector. Select **Allow access**.
-
-    ![Select allow access](assets/7.3_06_AllowAccess.png)
-
-1. Select **Submit** for the **Get items** SharePoint connector action to be added as a node to the topic.
-
-    ![Submit](assets/7.3_07_ConnectedSelectSubmit.png)
+    Select **Submit** for the **Get items** SharePoint connector action to be added as a node to the topic.
 
 1. The **Get items** SharePoint connector action is now added to the topic. We can now begin configuring the inputs of the action. Select the **ellipsis (...) icon** and select **Properties**.
 
-    ![Select Properties](assets/7.3_08_GetItemsProperties.png)
+    ![Select Properties](assets/7.3_04_GetItemsProperties.png)
 
 1. The **Get items** configuration pane will appear and by default, you'll see the **Inputs** tab. Select the **Initiation** tab and enter a description in the **Usage Description** field. Copy and paste the following.
 
@@ -600,13 +586,14 @@ Let's begin!
     Retrieves devices from SharePoint list
     ```
 
+    > [!NOTE]
     > This will come in handy when we view the _Manage your connections_ page of our agent. We'll return to this shortly.
 
-    ![Get items description](assets/7.3_09_UpdateDescription.png)
+    ![Get items description](assets/7.3_05_UpdateDescription.png)
 
-1. Select the **Inputs** tab and select the **Contoso IT** site and the **Devices** list provided setup via the link in your **Signup Email**.
+1. Select the **Inputs** tab and select the **Contoso IT** site and the **Devices** list that you setup in [Lesson 00 - Course Setup - Step 3: Create new SharePoint site](../00-course-setup/data-setup.md).
 
-    ![Configure Get items inputs](assets/7.3_10_GetItemsInputs.png)
+    ![Configure Get items inputs](assets/7.3_06_GetItemsInputs.png)
 
 1. Now, to only display devices from the SharePoint list based on
     - the selected value,
@@ -614,11 +601,11 @@ Let's begin!
 
     we need to apply a filter. This is achieved by entering a filter query with the help of Power Fx. Select the **ellipsis (...) icon**.
 
-    ![Select ellipsis icon](assets/7.3_11_SelectVariable.png)
+    ![Select ellipsis icon](assets/7.3_07_SelectVariable.png)
 
 1. By default, you'll be in the **Custom** tab. Select the **Formula** tab.
 
-    ![Select Formula tab](assets/7.3_12_SelectFormula.png)
+    ![Select Formula tab](assets/7.3_08_SelectFormula.png)
 
 1. Select the **expand** icon to enlarge the **Formula** field. Copy and paste the following Power Fx expression.
 
@@ -630,17 +617,17 @@ Let's begin!
     Concatenate("Status eq 'Available' and AssetType eq '", Topic.VarDeviceType, "'")
     ```
 
-1. Select **Insert**.
+    Select **Insert**.
 
-    ![Enter Power Fx expression and select insert](assets/7.3_13_EnterFormula.png)
+    ![Enter Power Fx expression and select insert](assets/7.3_09_EnterFormula.png)
 
-1. The Power Fx expression will now be applied in the Filter Query input parameter of the **Get items** action. Next, select the **All items** view in the **Limit Columns by View**. This will only retrieve the columns in the list based on the selected view. (NOTE: you might need to click refresh to get the view to appear.)
+1. The Power Fx expression will now be applied in the Filter Query input parameter of the **Get items** action. Next, select the **All items** view in the **Limit Columns by View**. This will only retrieve the columns in the list based on the selected view.
 
-    ![List Columns by View](assets/7.3_14_LimitColumnsByView.png)
+    ![List Columns by View](assets/7.3_10_LimitColumnsByView.png)
 
-1. Next, we'll update the name of the variable for the output. Select the **Outputs** tab and select the `GetItems` variable. (Make sure to click the "record" section).
+1. Next, we'll update the name of the variable for the output. Select the **Outputs** tab and select the `GetItems` variable.
 
-    ![Update variable](assets/7.3_15_ConfigureOutputs.png)
+    ![Update variable](assets/7.3_11_ConfigureOutputs.png)
 
 1. Update the name to the following.
 
@@ -648,65 +635,73 @@ Let's begin!
     VarDevices
     ```
 
-    ![Update variable name](assets/7.3_16_RenameVariable.png)
+    ![Update variable name](assets/7.3_12_RenameVariable.png)
 
 1. Scroll down and in the **Usage** section, select **Global**. This will make the variable accessible by any topic.
 
-    ![Update to Global variable](assets/7.3_17_UpdateToGlobalVariable.png)
+    ![Update to Global variable](assets/7.3_13_UpdateToGlobalVariable.png)
 
 1. **Close** the **Variable properties** pane.
 
-    ![Close Variable properties pane](assets/7.3_18_ExitVariablePropertiesPane.png)
+    ![Close Variable properties pane](assets/7.3_14_ExitVariablePropertiesPane.png)
 
 1. Select the **plus +** icon to insert a new node, select **Variable management** followed by selecting **Set a variable value**.
 
-    ![Add Set a variable value node](assets/7.3_19_AddSetAVariableValueNode.png)
+    ![Add Set a variable value node](assets/7.3_15_AddSetAVariableValueNode.png)
 
 1. Select the **greater than** icon for the **Set variable** input parameter.
 
-    ![Set variable](assets/7.3_20_SelectAVariable.png)
+    ![Set variable](assets/7.3_16_SelectAVariable.png)
 
 1. Select the Topic output created earlier as the variable, **VarAvailableDevices**.
 
-    ![Save topic](assets/7.3_21_SelectVarAvailableDevicesOutput.png)
+    ![Save topic](assets/7.3_17_SelectVarAvailableDevices.png)
 
 1. Next, select the **ellipsis (...) icon** to define the value of the variable.
 
-    ![Select variable value](assets/7.3_22_SelectVariable.png)
+    ![Select variable value](assets/7.3_18_SelectVariable.png)
+
+1. Select the **Formula** tab and select the **expand** icon to enlarge the **Formula** field.
+
+    ![Select Formula tab and select expand icon](assets/7.3_19_SelectFormulaTab.png)
 
 1. We'll now use a PowerFx expression to set the variable value as the `value` property returned in the **Get items** response, and make the [scope of the variable](https://learn.microsoft.com/microsoft-copilot-studio/advanced-power-fx?WT.mc_id=power-172618-ebenitez) global by adding the prefix of `Global`.
 
-    Enter the following formula:
+    Select **Insert**.
 
-    ```text
-    Global.VarDevices.value
-    ```
+    ![Power Fx formula for variable value](assets/7.3_20_EnterFormula.png)
 
-    Select **Insert**
+1. You'll now see the **To value** field set to the Power Fx formula.
 
-    ![Power Fx formula for variable value](assets/7.3_23_PowerFxFormula.png)
-
-1. **Save** the topic.
+    ![To value field](assets/7.3_21_Formula.png)
 
 1. Next we need to update the agent instructions. Select the **Overview** tab and select **Edit**.
 
-    ![Edit instructions](assets/7.3_24_EditInstructions.png)
+    ![Edit instructions](assets/7.3_22_EditInstructions.png)
 
-1. Add the a new line in the instructions, copy and paste the following.
+1. Highlight the following instructions underneath the **header** in regard to **device assistance** and delete them.
+
+    ![Add instructions](assets/7.3_23_ClearInstructions.png)
+
+1. Add a new line in the instructions, copy and paste the following.
 
     ```text
-    - Help find available devices and give full details using [Available devices]. Always extract the VarDeviceType from the inputs. After giving device details, ask the user if they want to request a device from the list of available devices.
+    1. Help find available devices and give full details using [Available devices]. Always extract the VarDeviceType from the inputs. After giving device details, ask the user if they want to request a device from the list of available devices.
     ```
 
-    This instruction will guide generative AI to invoke the **Available devices** trigger to display the list of available devices from the **Devices** Sharepoint list. Select the entire topic placeholder in square brackets.
+    This instruction will guide generative AI to invoke the **Available devices** trigger to display the list of available devices from the **Devices** Sharepoint list.
 
-    ![Add instructions](assets/7.3_25_AddInstructions.png)
+    ![Update instructions](assets/7.3_24_UpdateInstructions.png)
+
+1. Select the entire topic placeholder in square brackets.
+
+    ![Highlight placeholder](assets/7.3_25_HighlightPlaceholder.png)
 
 1. Type in the forward slash character `/` and the list of topics will appear. Select the **Available devices** topic.
 
     ![Reference trigger](assets/7.3_26_SelectAvailableDevicesTopic.png)
 
-1. **Save** the updated instructions.
+1. The topic will now be invoked by the agent when asked about available devices. **Save** the updated instructions.
 
     ![Save instructions](assets/7.3_27_SaveUpdatedInstructions.png)
 
@@ -716,7 +711,7 @@ Let's begin!
     I need a laptop
     ```
 
-    ![Test](assets/7.3_28_Test.png)
+    ![Test](assets/7.3_28_NewTestSession.png)
 
 1. Before the agent can proceed, the user needs to verify their connection can be used. Select **Allow**.
 
@@ -736,6 +731,7 @@ Let's begin!
 
 1. This is where we can see the details of the Get items action and remember the _usage description_ we entered earlier? This is where we'll see the usage description. Select **Close**.
 
+    > [!NOTE]
     > This lets us know what actions are used and the purpose of it. This keeps our connections organized 📁.
 
     ![Usage description](assets/7.3_33_UsedByInformation.png)

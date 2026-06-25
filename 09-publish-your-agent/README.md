@@ -2,6 +2,10 @@
 
 ## 🕵️‍♂️ CODENAME: `OPERATION PUBLISH PUBLISH PUBLISH`
 
+🎥 **Watch the Walkthrough**
+
+[![Publish agent video thumbnail](./assets/video-thumbnail.jpg)](https://www.youtube.com/watch?v=eVZmljhYlSI "Watch the walkthrough on YouTube")
+
 ## 🎯 Mission Brief
 
 After completing a series of challenging modules, Agent Maker, you're now ready for your most critical step yet: publishing your agent. It’s time to make your creation available to users across Microsoft Teams and Microsoft 365 Copilot.
@@ -9,6 +13,9 @@ After completing a series of challenging modules, Agent Maker, you're now ready 
 Your agent—equipped with a clear mission, powerful tools, and access to key knowledge sources—is ready to serve. Using Microsoft Copilot Studio, you deploy your agent so it can start assisting real users, right where they work.
 
 Let’s launch your agent into action.
+
+> [!NOTE]
+> Some screenshots in this lesson use the **classic experience**. If your Copilot Studio screen looks different **and** you see a **New Experience** toggle in the upper-right corner, turn it off to switch back to the classic experience. If there's no toggle, just continue — your screen already matches.
 
 ## 🔎 Objectives
 
@@ -29,6 +36,9 @@ Let’s launch your agent into action.
 Every time you work on an agent in Copilot Studio you might update it by adding knowledge or tools. When you're ready with all the changes, and you tested thoroughly, you're ready to publish it. Publishing ensures that the latest updates are live. When you update your agent with new tools, and you don't hit the publish button, it's not available yet for end users.
 
 Make sure to always hit the publish button when you want to push the updates to the users of your agent. Your agent might have channels added to it and when you hit publish the updates are available for all the channels you added to the agent.
+
+> [!IMPORTANT]
+> ❗ There was a recent change to Copilot Studio Trial environments that prohibits the publishing of agents. If you are in a trial environment you will not be able to complete this module to publish your agent. It will require a paid environment to publish an agent. Publishing of the agent is not required to receive a badge.
 
 ## ⚙️ Configure channels
 
@@ -53,30 +63,27 @@ To add a channel, navigate to the **Channels** tab in your agent and select the 
 
 Different channels have different user experiences. When building an agent for multiple channels, make sure to be aware of the differences per channel. It's always a good strategy to test your agent in multiple channels to see if it really does what you intended.
 
-| Experience                        | Website       | Teams and Microsoft 365 Copilot         | Facebook                 | Dynamics Omnichannel for Customer Service                   |
-| --------------------------------- | ------------- | --------------------------------------- | ------------------------ | ----------------------------------------------------------- |
-| [Customer satisfaction survey][1] | Adaptive card | Text-only                               | Text-only                | Text-only                                                   |
-| [Multiple-choice options][1]      | Supported     | [Supported up to six (as hero card)][4] | [Supported up to 13][6]  | [Partially Supported][8]                                    |
-| [Markdown][2]                     | Supported     | [Partially Supported][5]                | [Partially supported][7] | [Partially Supported][9]                                    |
-| [Welcome message][1]              | Supported     | Supported                               | Not supported            | Supported for [Chat][10]. Not supported for other channels. |
-| [Did-You-Mean][3]                 | Supported     | Supported                               | Supported                | Supported for [Microsoft Teams][11], [Chat][10], Facebook, and text-only channels (short message service (SMS) via [TeleSign][12] and [Twilio][13], [WhatsApp][14], [WeChat][15], and [Twitter][16]). Suggested actions are presented as a text-only list; users must retype an option to respond. |
+| Experience | Website | Teams and Microsoft 365 Copilot | Facebook | Dynamics Omnichannel for Customer Service |
+| :-- | :-- | :-- | :-- | :-- |
+| Customer satisfaction survey | Adaptive card | Text-only | Text-only | Text-only |
+| Multiple-choice options | Supported | [Supported up to six (as hero card)][1] | [Supported up to 13][3] | [Partially Supported][5] |
+| Markdown | Supported | [Partially Supported][2] | [Partially supported][4] | [Partially Supported][6] |
+| Welcome message | Supported | Supported | Not supported | Supported for [Chat][7]. Not supported for other channels. |
+| Did-You-Mean | Supported | Supported | Supported | Supported for [Microsoft Teams][8], [Chat][7], Facebook, and text-only channels (short message service (SMS) via [TeleSign][9] and [Twilio][10], [WhatsApp][11], [WeChat][12], and [Twitter][13]). Suggested actions are presented as a text-only list; users must retype an option to respond. |
 
-[1]: https://learn.microsoft.com/microsoft-copilot-studio/authoring-create-edit-topics
-[2]: https://daringfireball.net/projects/markdown/
-[3]: https://learn.microsoft.com/microsoft-copilot-studio/advanced-ai-features
-[4]: https://learn.microsoft.com/microsoftteams/platform/concepts/cards/cards-reference#hero-card
-[5]: https://learn.microsoft.com/microsoftteams/platform/bots/how-to/format-your-bot-messages#text-only-messages
-[6]: https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/
-[7]: https://www.facebook.com/help/147348452522644?helpref=related
-[8]: https://learn.microsoft.com/dynamics365/customer-service/asynchronous-channels#suggested-actions-support
-[9]: https://learn.microsoft.com/dynamics365/customer-service/asynchronous-channels#preview-support-for-formatted-messages
-[10]: https://learn.microsoft.com/dynamics365/customer-service/set-up-chat-widget
-[11]: https://learn.microsoft.com/dynamics365/customer-service/configure-microsoft-teams
-[12]: https://learn.microsoft.com/dynamics365/customer-service/configure-sms-channel
-[13]: https://learn.microsoft.com/dynamics365/customer-service/configure-sms-channel-twilio
-[14]: https://learn.microsoft.com/dynamics365/customer-service/configure-whatsapp-channel
-[15]: https://learn.microsoft.com/dynamics365/customer-service/configure-wechat-channel
-[16]: https://learn.microsoft.com/dynamics365/customer-service/configure-twitter-channel
+[1]: https://learn.microsoft.com/microsoftteams/platform/concepts/cards/cards-reference#hero-card
+[2]: https://learn.microsoft.com/microsoftteams/platform/bots/how-to/format-your-bot-messages#text-only-messages
+[3]: https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies/
+[4]: https://www.facebook.com/help/147348452522644?helpref=related
+[5]: https://learn.microsoft.com/dynamics365/customer-service/asynchronous-channels#suggested-actions-support
+[6]: https://learn.microsoft.com/dynamics365/customer-service/asynchronous-channels#preview-support-for-formatted-messages
+[7]: https://learn.microsoft.com/dynamics365/customer-service/set-up-chat-widget
+[8]: https://learn.microsoft.com/dynamics365/customer-service/configure-microsoft-teams
+[9]: https://learn.microsoft.com/dynamics365/customer-service/configure-sms-channel
+[10]: https://learn.microsoft.com/dynamics365/customer-service/configure-sms-channel-twilio
+[11]: https://learn.microsoft.com/dynamics365/customer-service/configure-whatsapp-channel
+[12]: https://learn.microsoft.com/dynamics365/customer-service/configure-wechat-channel
+[13]: https://learn.microsoft.com/dynamics365/customer-service/configure-twitter-channel
 
 > [!NOTE]
 > There are some examples of where you can use different logic for different channels. An example of it can be found in the Power Platform Snippets repository:
@@ -226,9 +233,7 @@ There are even more possibilities here. Your admin can change the global setup p
 
 ## ✅ Mission Complete
 
-🎉 **Congratulations!** You successfully published your agent and added it to Teams and Microsoft 365 Copilot! Next up is the last mission of the course: Understanding licensing.
-
-⏭️ [Move to **Understanding licensing** lesson](../12-understanding-licensing/README.md)
+🎉 **Congratulations!** You successfully published your agent and added it to Teams and Microsoft 365 Copilot. This was the final hands-on mission of the course — your Contoso Helpdesk Agent is now built, configured, and ready to serve real users right where they work. Outstanding work, Agent Maker!
 
 ## 📚 Tactical Resources
 
